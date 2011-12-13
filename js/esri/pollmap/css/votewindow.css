@@ -173,6 +173,16 @@
     padding: 2px;
 }
 
+.vote-form td.question-label {
+	text-align: right;
+	height: 2em;
+}
+
+/** a subtitle row that appears above radio questions if included. A section-header of sorts **/
+.vote-form tr.question-subtitle {
+    height: 3em;
+    font-size: 120%;
+}
 .vote-form td.first, .vote-form td.last {
     /* background-color: #CCC;*/
 }
