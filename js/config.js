@@ -109,7 +109,7 @@ var config = {
 	},
 	questions : [{
 		type : "autocomplete", // "radio" or "allocation" or "autocomplete",
-		label : "Team: ", // required for "autocomplete" question type
+		label : "Team: ", // required for "autocomplete" question type, also used for "radio" if present...
 		autocompleteService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/data/MapServer/1", // the choices to use when populating the autocomplete
 		autocompleteQueryField : "shortname",
 		autocompleteIDField : "field",

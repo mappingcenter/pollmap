@@ -201,6 +201,12 @@ dojo.declare("esri.pollmap.widgets.VoteWindow", [dijit._Widget, dijit._Templated
                     //                log(value);
                     if (j === 0) {
                         cellClass = "first";
+						if(question.label) {
+                              dojo.create("td", {
+                                    innerHTML : question.label,
+                                    "class" : "question-label"
+                              }, questionContainer)
+                        }
                     }
                     if (j > 0) {
                         dojo.create("td", {
