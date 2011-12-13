@@ -12,13 +12,14 @@
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     color: #FFFFFF;
+    filter: alpha(opacity = 80);
 }
 
 .summary-pane h1 {
     font-size: 18px;
     text-align: center;
     /*font-weight: bold;*/
-    color: #F0F0F0;
+    color: #D0CFD4;
 }
 
 .summary-pane svg rect {
