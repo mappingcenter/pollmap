@@ -331,6 +331,7 @@ function refreshLayout(/* Number */interval) {
 		voteWindow = dijit.byId("voteWindow");
 		if(voteWindow && voteWindow.dialog.open) {
 			voteWindow.refresh();
+		}
 	}
 
 	if(interval === 0) {

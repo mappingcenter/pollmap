@@ -21,7 +21,7 @@ var config = {
 		
 		// app modes
 		locationMode : "postal", // "city" or "postal" REQUIRED
-		questionMode : "autocomplete", //"autocomplete" or "allocation" or "radio" 
+		questionMode : "radio", //"autocomplete" or "allocation" or "radio" 
 		cookieName : "xxx2011UID", // *CHANGE THIS* the name of the cookie used to track voters
 		theme : "slate", //"foam" or "slate" or... Used to make it easier to create separate looks in CSS
 		isPaneUI : true, // set to false when using only one map REQUIRED
@@ -108,24 +108,32 @@ var config = {
 		inactiveMapLabel : ""
 	},
 	questions : [{
-		type : "autocomplete", // "radio" or "allocation" or "autocomplete",
+		type : "radio", // "radio" or "allocation" or "autocomplete",
 		label : "Team: ", // required for "autocomplete" question type, also used for "radio" if present...
-		autocompleteService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/data/MapServer/1", // the choices to use when populating the autocomplete
-		autocompleteQueryField : "shortname",
-		autocompleteIDField : "field",
+		//autocompleteService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/data/MapServer/1", // the choices to use when populating the autocomplete
+		//autocompleteQueryField : "shortname",
+		//autocompleteIDField : "field",
 		title : "NCAA Football: Which team do you support?",
-		// subtitle: "Dot color represents majority vote in that city",
+		subtitle: "Dot color represents majority vote in that city",
 		shuffle : true, // whether to randomize the order of the questions on load [unimplemented]
-		active : true
-		// values : [{ // only used for radio or allocation type questions
-		// label : "UConn",
-		// value : "CHOICE001",
-		// title : "UConn"
-		// }, { 
-		// label : "UAB",
-		// value : "CHOICE002",
-		// title : "UAB"
-		// }]
+		active : true,
+		values : [{ // only used for radio or allocation type questions
+		label : "UConn",
+		value : "CHOICE001",
+		title : "UConn"
+		}, { 
+		label : "UAB",
+		value : "CHOICE002",
+		title : "UAB"
+		},{ 
+		label : "UAB",
+		value : "CHOICE002",
+		title : "UAB"
+		},{ 
+		label : "UAB",
+		value : "CHOICE002",
+		title : "UAB"
+		}]
 	}],
 
 	maps : [{
