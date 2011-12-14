@@ -192,6 +192,14 @@ dojo.declare("esri.pollmap.widgets.VoteWindow", [dijit._Widget, dijit._Templated
             
             // ***************** NORMAL VOTE UI ********************* //
             if (typeof question.type == "undefined" || question.type === "" || question.type == "radio") { // radio question type or not defined
+                if(question.subtitle) {
+					dojo.create("tr", {
+						"class" : "question-subtitle",
+						"id" : "question-subtitle" + i,
+						innerHTML : "<td colspan='14'>"+question.subtitle+"</td>" // colspan hack should center no matter what
+					}, this.questionsNode);
+				}
+                
                 questionContainer = dojo.create("tr", {
                     "class": "vote-form-question",
                     "id": "question" + i
