@@ -64,6 +64,7 @@ var _eventConnections = [];
 var voteWindow = null;
 var mapDialogDirty = true;
 var configController = {};
+var infoWindow = null;
 
 // tell ie7 they're SOL
 if(dojo.isIE == 7) {
@@ -511,9 +512,12 @@ function createMegaMap() {
 	megaMapOverlayLayer = new esri.layers.ArcGISTiledMapServiceLayer(config.app.overlayTiledService, {
 		opacity : config.app.labelOpacity // TODO: put in defaults for values like this
 	});
+	
+	
+	
 	megaMap = new esri.Map("megaMapNode", {
-		extent : esri.geometry.fromJson(config.app.defaultExtent.toJson())
-
+		extent : esri.geometry.fromJson(config.app.defaultExtent.toJson()),
+		infoWindow: infoWindow
 	});
 
 	_eventConnections.push(dojo.connect(megaMap, "onExtentChange", function(extent) {
