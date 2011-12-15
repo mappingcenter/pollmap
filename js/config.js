@@ -61,7 +61,7 @@ var config = {
 		voteSummarySuffix: " votes in this area",
 		choiceCompareText : "",// " vs. " " or " // This is used in between options when using "radio" question mode. 
 		//titleCompareText : "", 		 * You can comment in some code in script.js (around line 212) to have the app generate map titles from its options, that will use this
-		megaMapSocialWidgetsHTML: '<div class="social-widgets vertical"><fb:like href="http://" layout="box_count" show_faces="false" width="20" font="" colorscheme="dark"></fb:like>' + '<iframe class="twitter-count-vertical" allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?count=vertical&via=mappingcenter&url=http://&text=How%20would%20you%20allocate%20%24100%20among%207%20enviro%20issues%3F%20%23Esri%20%23EarthDay%20%23PollMap&url=http%3A%2F%2Fpollmap.esri.com%2Fearthday%2F"></iframe>',
+		megaMapSocialWidgetsHTML: '',// removed due to buggy twitter button. Whatever you put in here will show up in the megamap <div class="social-widgets vertical"><fb:like href="http://" layout="box_count" show_faces="false" width="20" font="" colorscheme="dark"></fb:like>' + '<iframe class="twitter-count-vertical" allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?count=vertical&via=mappingcenter&url=http://&text=How%20would%20you%20allocate%20%24100%20among%207%20enviro%20issues%3F%20%23Esri%20%23EarthDay%20%23PollMap&url=http%3A%2F%2Fpollmap.esri.com%2Fearthday%2F"></iframe>',
 
 		// Formatting
 		panePadding : 0,

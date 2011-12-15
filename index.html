@@ -5,16 +5,19 @@
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
     Remove this if you use the .htaccess -->
     <meta http-equiv="X-UA-Compatible" content="IE=8">
+    
+    <!-- CHANGE THESE! -->
     <title>Earth Day PollMap - How would you spend $100?</title>
     <meta name="description" content="Observe Earth Day 2011 by letting us know how you would invest in protecting our planet. Compare your choices with other participants around the world.">
     <meta name="keywords" content="Earth Day, FanMap, climate change, global warming, population, energy, sustainability, environmental education, sustainable">
     <meta name="author" content="Esri Mapping Center">
     <meta property="og:title" content="Earth Day PollMap" />
     <meta property="og:type" content="product" />
-    <meta property="og:url" content="http://pollmap.esri.com/earthday/" />
+    <meta property="og:url" content="http://" />
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="PollMap: Earth Day Edition" />
     <meta property="fb:admins" content="xxx" />
+    
     <!--  Mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
@@ -39,10 +42,14 @@
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/config.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    
+    <!-- UNCOMMENT FOR GOOGLE ANALYTICS -->
+    <!--
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      // _gaq.push(['_setAccount', 'UA-19605445-4']);
-      // _gaq.push(['_setDomainName', '.esri.com']);
+      // CHANGE THIS if you want to use analytics
+      // _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      // _gaq.push(['_setDomainName', '.mysite.com']);
       _gaq.push(['_trackPageview']);
       
       (function(){
@@ -54,6 +61,7 @@
           s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    -->
   </head>
   <body class="tundra foam">
     <div dojotype="dijit.layout.BorderContainer" design="sidebar" gutters="false" style="width: 100%; height: 100%; margin: 0;" id="wrapper">
@@ -72,7 +80,7 @@
       <a href="#" onclick="dijit.byId('aboutWindow').show();">about the app</a>
     </div>
     <div class="social-widgets vertical">
-    <!-- Enable this to use social widgets
+    <!-- Uncomment this to use social widgets
       <fb:like href="http://link/to/map" layout="box_count" show_faces="false" width="20" font="" colorscheme="dark">
       </fb:like>
       <a href="http://twitter.com/share" class="twitter-share-button" data-text="Vote!" data-count="none" data-via="mappingcenter" data-url="http://link/to/map">Tweet</a>
@@ -96,6 +104,7 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <div id="fb-root">
     </div>
+    <!-- CHANGE THIS -->
     <script type="text/javascript">
       window.fbAsyncInit = function(){
           FB.init({
