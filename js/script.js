@@ -495,7 +495,6 @@ function megamapify(index) {// pane index
 	_eventConnections.push(dojo.connect(megaMap, "onClick", onMegaMapClick));
 	_eventConnections.push(dojo.connect(megaMap, "onUpdateStart", onMegaMapUpdateStart));
 	_eventConnections.push(dojo.connect(megaMap, "onUpdateEnd", onMegaMapUpdateEnd));
-	dojo.subscribe("identify/result", onIdentifyResult);
 	dojo.subscribe("identify/submitted", onIdentifySubmitted);
 
 	log("inspecting mapDialog");
@@ -630,14 +629,6 @@ function onMegaMapUpdateEnd(evt) {
 	log(dojo.style(mapDialog.domNode, "top"));
 	log(dojo.style(mapDialog.domNode, "bottom"));
 	checkMapDialogLayout();
-}
-
-/**
- * Gets called when 
- */
-function onIdentifyResult(results) {
-	log("App: Identify Result received");
-	log(results);
 }
 
 /**

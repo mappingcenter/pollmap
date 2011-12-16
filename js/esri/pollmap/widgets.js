@@ -1426,15 +1426,6 @@ dojo.declare("esri.pollmap.widgets.IdentifyController", [dijit._Widget], {
         	
         }));
         dojo.publish("identify/submitted", [{deferred: this._deferred, screenPoint: this._screenPoint}]);
-		
-		//         
-        // , function(results){
-            // log("Identify successful");
-            // log(results);
-            // dojo.publish("identify/result", [results]);
-        // }, function(err){
-            // console.error("Error doing identify " + dojo.toJson(err));
-        // })
     }
 });
 
