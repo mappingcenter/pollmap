@@ -237,6 +237,17 @@ a:active {
     font-size: 10px;
 }
 
+.next-map-link {
+	color: #000;
+	padding: 0 5px 0 5px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.next-map-link:hover {
+	color: orange;	
+}
+
 #megaMapNode_zoom_slider {
     left: 15px !important;
     top: 52px !important;

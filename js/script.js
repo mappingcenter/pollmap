@@ -488,7 +488,7 @@ function megamapify(index) {// pane index
 		megaMapOperationalLayer.setImageFormat(config.app.mapImageFormat);
 	}
 
-	dojo.byId("megaMapTitle").innerHTML = this.getTitle(mapConfigs[index]);
+	dojo.byId("megaMapTitle").innerHTML = this.getTitle(mapConfigs[index]) + "<a title='Next Map' class='next-map-link' href='javascript:gotoNextMegaMap()'>»</a>";
 	//config.questions[index]);
 	// set the title on the megamap
 	megaMap.addLayer(megaMapOperationalLayer, 1);
@@ -546,6 +546,13 @@ function createMegaMap() {
 	megaMap.addLayer(megaMapOverlayLayer);
 }
 
+function gotoNextMegaMap() {
+	if (activeMapIndex < mapConfigs.length-1){
+		megamapify(activeMapIndex + 1);
+	} else {
+		megamapify(0);
+	}
+}
 function resizeMegaMap() {
 	log("New size = ", (viewSize.w - 2 * config.app.mapDialogPadding), (viewSize.h - 2 * config.app.mapDialogPadding));
 

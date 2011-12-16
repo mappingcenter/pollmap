@@ -143,7 +143,7 @@ var config = {
 
 	maps : [{
 		mapService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/map01/MapServer",
-		title : "The Big 8",
+		title : "The Big 8 1",
 		values : [{
 			label : "108",
 			value : "CHOICE108",
@@ -176,7 +176,7 @@ var config = {
 		}]
 	}, {
 		mapService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/map01/MapServer",
-		title : "The Big 8",
+		title : "The Big 8 2",
 		values : [{
 			label : "108",
 			value : "CHOICE108",
@@ -209,7 +209,7 @@ var config = {
 		}]
 	}, {
 		mapService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/map01/MapServer",
-		title : "The Big 8",
+		title : "The Big 8 3",
 		values : [{
 			label : "108",
 			value : "CHOICE108",
@@ -242,7 +242,7 @@ var config = {
 		}]
 	}, {
 		mapService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/map01/MapServer",
-		title : "The Big 8",
+		title : "The Big 8 4",
 		values : [{
 			label : "108",
 			value : "CHOICE108",
