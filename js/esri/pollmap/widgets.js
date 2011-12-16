@@ -1353,35 +1353,46 @@ dojo.declare("esri.pollmap.widgets.SummaryPane", [dijit._Widget, dijit._Template
 
 dojo.require("esri.tasks.identify");
 /**
- * Handles all the identify stuff in the background, controlled via pub/sub
+ * Handles all the identify stuff in the background, controlled via pub/sub.
+ * We'll let the root application handle the (trivial) final step of adding the deferred to the map
  */
 dojo.declare("esri.pollmap.widgets.IdentifyController", [dijit._Widget], {
-    identifyParams: null,
-    url: "",
-    task: null,
+    _identifyParams: null,
+    _url: "",
+    _tolerance: 3,
+    _task: null,
+    _deferred: null,
+    _screenPoint: null,
+    _infoTemplate: null,
     constructor: function(/*Object*/args){
         log("Building Identify Controller");
-        if ("identifyService" in config.app) {
-            this.url = config.app.identifyService; // not even gonna fail gracefully here, since you better have one defined!    
+        if (dojo.exists("config.app.identifyTolerance")){
+        	this._tolerance = config.app.identifyTolerance;
+        }
+        if (dojo.exists("config.app.identifyInfoTemplate") && config.app.identifyInfoTemplate){
+        	this._infoTemplate = config.app.identifyInfoTemplate;
+        } else {
+        	this._infoTemplate = new esri.InfoTemplate("", "${*}");
+        }
+        if (dojo.exists("config.app.identifyService")) {
+            this._url = config.app.identifyService; // not even gonna fail gracefully here, since you better have one defined!    
         } else {
             err("Error building IdentifyController, please specify identifyService in your config file!");
             return;
         }
-        this.task = new esri.tasks.IdentifyTask(this.url);
-        this.identifyParams = new esri.tasks.IdentifyParameters();
-        this.identifyParams.layerIds = [0];
-        this.identifyParams.layerOption = esri.tasks.IdentifyParameters.LAYER_OPTION_ALL;
-        this.identifyParams.returnGeometry = true;
-        this.identifyParams.tolerance = 3;
-        
+        this._task = new esri.tasks.IdentifyTask(this._url);
+        this._identifyParams = new esri.tasks.IdentifyParameters();
+        this._identifyParams.layerIds = [0];
+        this._identifyParams.layerOption = esri.tasks.IdentifyParameters.LAYER_OPTION_ALL;
+        this._identifyParams.returnGeometry = true;
+        this._identifyParams.tolerance = config.app.identifyTolerance;
         dojo.subscribe("identify", dojo.hitch(this, this.onIdentify));
         
     },
     onIdentify: function(args){
         log("IdentifyController: Identify request received");
-        log(dojo.toJson(this.identifyParams));
-        log(this.task);
-        log(dojo.toJson(this.task));
+		log("args: "+dojo.toJson(args));
+		var infoTemplate = this._infoTemplate;
         /*
          * args should have the following properties:
          * geometry
@@ -1389,20 +1400,41 @@ dojo.declare("esri.pollmap.widgets.IdentifyController", [dijit._Widget], {
          * width
          * height
          */
-        this.identifyParams.geometry = args.geometry;
-        this.identifyParams.mapExtent = args.extent;
-        this.identifyParams.width = args.width;
-        this.identifyParams.height = args.height;
+        this._identifyParams.geometry = args.geometry;
+        this._identifyParams.mapExtent = args.extent;
+        this._identifyParams.width = args.width;
+        this._identifyParams.height = args.height;
+        this._screenPoint = args.screenPoint;
         log("IdentifyController: executing identify task");
-        log(this.identifyParams);
-        log(this.task);
-        this.task.execute(this.identifyParams, function(results){
-            log("Identify successful");
-            log(results);
-            dojo.publish("identify/result", [results]);
-        }, function(err){
-            console.error("Error doing identify " + dojo.toJson(err));
-        });
+        log(this._identifyParams);
+        log(this._task);
+        this._deferred = this._task.execute(this._identifyParams);
+        this._deferred.addCallback(dojo.hitch(this, function(response){
+        	var _features = [];
+        	log("Identify response received");
+        	log(response);
+        	if (response.length){
+        		dojo.forEach(response, dojo.hitch(this, function(item){
+        			log(item);
+        			item.feature.infoTemplate = this._infoTemplate;
+        			_features.push(item.feature);
+        		}));
+        		return _features;
+        	} else {
+        		return _features;
+        	}
+        	
+        }));
+        dojo.publish("identify/submitted", [{deferred: this._deferred, screenPoint: this._screenPoint}]);
+		
+		//         
+        // , function(results){
+            // log("Identify successful");
+            // log(results);
+            // dojo.publish("identify/result", [results]);
+        // }, function(err){
+            // console.error("Error doing identify " + dojo.toJson(err));
+        // })
     }
 });
 

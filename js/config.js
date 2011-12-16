@@ -1,7 +1,7 @@
 /**
- * config schema version 2.1
+ * config schema version 2.1.1
  * please note that all niflheim services are internal esri test services and won't work for those trying out the pollmap externally!
- * // added theme
+ * // added identify tolerance
  */
 
 // strings
@@ -12,7 +12,10 @@ var winkel = new esri.SpatialReference({
 	"wkt" : 'PROJCS["World_Winkel_Tripel_NGS",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Winkel_Tripel"],PARAMETER["False_Easting",0.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-96.0],PARAMETER["Standard_Parallel_1",50.467],UNIT["Meter",1.0]]'
 });
 
-var baseSR = winkel;
+var worldWebMercator = new esri.geometry.Extent(-15978977, -5508497, 15407900, 13981110, webMercator )
+var northAmericaWinkel = new esri.geometry.Extent(-3280498, 2158621, 2995899, 7065267, winkel);
+
+var baseSR = webMercator;
 
 var config = {
 	app : {
@@ -28,8 +31,8 @@ var config = {
 		debug : true, // set to false for production
 
 		// services
-		basemapTiledService : "http://fanmap.esri.com/ArcGIS/rest/services/WT_Slate_Base2/MapServer", //"http://pollmap.esri.com/ArcGIS/rest/services/Canvas/World_EarthDay_0419_BASE/MapServer",
-		overlayTiledService : "http://fanmap.esri.com/ArcGIS/rest/services/WT_MM16_Ref_Overlay/MapServer", //"http://pollmap.esri.com/ArcGIS/rest/services/Canvas/World_EarthDay_0419_REFERENCE/MapServer",
+		basemapTiledService : "http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer", //http://fanmap.esri.com/ArcGIS/rest/services/WT_Slate_Base2/MapServer", 
+		overlayTiledService : "http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",// http://fanmap.esri.com/ArcGIS/rest/services/WT_MM16_Ref_Overlay/MapServer", //"http://pollmap.esri.com/ArcGIS/rest/services/Canvas/World_EarthDay_0419_REFERENCE/MapServer",
 		geometryService : "http://50.17.250.45/arcgis/rest/services/Geometry/GeometryServer",
 		featureService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/data/MapServer/0", //"http://niflheim.esri.com/ArcGIS/rest/services/earthday/earthday_places/MapServer/0",//"http://pollmap.esri.com/ArcGIS/rest/services/Zips_Winkel/MapServer/0", use for zip validation
 		locatorService : "http://tasks.arcgisonline.com/ArcGIS/rest/services/Locators/ESRI_Places_World/GeocodeServer",
@@ -40,10 +43,10 @@ var config = {
 		summaryService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/tools/GPServer/Summarize", //"http://50.17.250.45/ArcGIS/rest/services/earthday/Vote/GPServer/Summarize",
 		voteService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/tools/GPServer/Vote", //"http://50.17.250.45/ArcGIS/rest/services/earthday/Vote/GPServer/Vote",
 		configService : "", //"http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/tools/GPServer/Config", // set to "" if you do not wish to use a server-side config service 
-		identifyService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/data/MapServer/identify", //unimplemented  		
+		identifyService : "http://niflheim.esri.com/ArcGIS/rest/services/collegefootball/data/MapServer", //unimplemented  		
 		// extents		
-		defaultExtent : new esri.geometry.Extent(-3280498, 2158621, 2995899, 7065267, winkel), // north america: new esri.geometry.Extent(-3280498, 2158621, 2995899, 7065267, winkel), safe world: new esri.geometry.Extent(-13531188, -1575214, 4060334, 8952304, baseSR),
-		fullExtent : new esri.geometry.Extent(-8424404, 1725683, 7856071, 8261354, winkel), // world: new esri.geometry.Extent(-72516023, -33265069, 72516023, 33265069, baseSR),
+		defaultExtent : worldWebMercator,// north america: new esri.geometry.Extent(-3280498, 2158621, 2995899, 7065267, winkel), safe world: new esri.geometry.Extent(-13531188, -1575214, 4060334, 8952304, baseSR),
+		fullExtent : worldWebMercator, //new esri.geometry.Extent(-8424404, 1725683, 7856071, 8261354, winkel), // world: new esri.geometry.Extent(-72516023, -33265069, 72516023, 33265069, baseSR),
 		spatialReference : baseSR,
 		geocodeZoomLevel : 8, //5, //1:577k THIS MUST BE A NUMBER, not a string
 
@@ -62,6 +65,7 @@ var config = {
 		choiceCompareText : "",// " vs. " " or " // This is used in between options when using "radio" question mode. 
 		//titleCompareText : "", 		 * You can comment in some code in script.js (around line 212) to have the app generate map titles from its options, that will use this
 		megaMapSocialWidgetsHTML: '',// removed due to buggy twitter button. Whatever you put in here will show up in the megamap <div class="social-widgets vertical"><fb:like href="http://" layout="box_count" show_faces="false" width="20" font="" colorscheme="dark"></fb:like>' + '<iframe class="twitter-count-vertical" allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?count=vertical&via=mappingcenter&url=http://&text=How%20would%20you%20allocate%20%24100%20among%207%20enviro%20issues%3F%20%23Esri%20%23EarthDay%20%23PollMap&url=http%3A%2F%2Fpollmap.esri.com%2Fearthday%2F"></iframe>',
+		identifyInfoTemplate: null, // insert custom InfoTemplate here
 
 		// Formatting
 		panePadding : 0,
@@ -80,6 +84,7 @@ var config = {
 		summarizeDelay : 1000,
 		geocodeZoomTimeout : 1000,
 		mapImageFormat : "png8", //must be a valid image format for server, either png8 png24 or png32 recommended
+		identifyTolerance: 5,
 		/**
 		 * The extent beyond which summary requests fail
 		 */

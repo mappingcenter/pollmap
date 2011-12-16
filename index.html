@@ -25,6 +25,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.5/js/dojo/dijit/themes/tundra/tundra.css">
     <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.5/js/dojo/dojo/resources/dojo.css">
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.5/js/esri/dijit/css/Popup.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript">
       var djConfig = {
@@ -80,7 +81,7 @@
       <a href="#" onclick="dijit.byId('aboutWindow').show();">about the app</a>
     </div>
     <div class="social-widgets vertical">
-    <!-- Uncomment this to use social widgets
+    <!-- Uncomment this to use social widgets --
       <fb:like href="http://link/to/map" layout="box_count" show_faces="false" width="20" font="" colorscheme="dark">
       </fb:like>
       <a href="http://twitter.com/share" class="twitter-share-button" data-text="Vote!" data-count="none" data-via="mappingcenter" data-url="http://link/to/map">Tweet</a>
@@ -97,14 +98,17 @@
     </div>
     <div id="summarizeController" dojotype="esri.pollmap.widgets.SummaryController">
     </div>
-    <!--div id="identifier" dojotype="esri.pollmap.widgets.IdentifyController">
-    </div-->
+    <div id="identifyController" dojotype="esri.pollmap.widgets.IdentifyController">
+    </div>
     <div id="aboutWindow" dojotype="dijit.Dialog" title="About the PollMap&trade;: Earth Day Edition" href="js/esri/pollmap/templates/AboutWindow.html">
     </div>
+    <!-- UNCOMMENT THIS TO USE TWITTER BUTTON
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    -->
+    
+    <!-- UNCOMMENT THIS TO USE FACEBOOK LIKE BUTTONS
     <div id="fb-root">
     </div>
-    <!-- CHANGE THIS -->
     <script type="text/javascript">
       window.fbAsyncInit = function(){
           FB.init({
@@ -122,5 +126,6 @@
           document.getElementById('fb-root').appendChild(e);
       }());
     </script>
+    -->
   </body>
 </html>

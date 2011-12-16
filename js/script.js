@@ -27,7 +27,7 @@ dojo.require("esri.map");
 dojo.require("esri.layers.FeatureLayer");
 dojo.require("esri.layers.agsdynamic");
 dojo.require("esri.tasks.gp");
-
+dojo.require("esri.dijit.Popup");
 dojo.require("esri.pollmap.widgets");
 //dojo.require("fanmap.control.MapCenterZoomController");
 var isIE7 = false;
@@ -94,7 +94,9 @@ function init() {
 		initMaps();
 		_eventConnections.push(dojo.connect(window, "onresize", refreshLayout));
 		_eventConnections.push(dojo.connect(dijit.byId("aboutWindow"), "onLoad", function() {
-			FB.XFBML.parse(); // reparse for FB widget in about WIndow
+			if (dojo.exists("FB")){
+				FB.XFBML.parse(); // reparse for FB widget in about WIndow	
+			}
 		}));
 		
 		viewSize = dojo.window.getBox();
@@ -161,8 +163,9 @@ function initListeners() {
 	if(numPanes == 1) {//config.questions.length == 1) {
 		dojo.subscribe("votes/close", function() {
 			megamapify(0);
-			FB.XFBML.parse();
-			// added fb like button to megamap
+			if (dojo.exists("FB")){
+				FB.XFBML.parse();				
+			}
 		});
 	}
 }
@@ -444,8 +447,9 @@ function megamapify(index) {// pane index
 
 		mapDialog.show();
 		
-		FB.XFBML.parse(); // reparse for FB widget 
-
+		if (dojo.exists("FB")){		
+			FB.XFBML.parse(); // reparse for FB widget. TODO: Is this redundant?  
+		}
 		dojo.fadeOut({
 			node : mapDialog.domNode
 		}).play();
@@ -492,6 +496,7 @@ function megamapify(index) {// pane index
 	_eventConnections.push(dojo.connect(megaMap, "onUpdateStart", onMegaMapUpdateStart));
 	_eventConnections.push(dojo.connect(megaMap, "onUpdateEnd", onMegaMapUpdateEnd));
 	dojo.subscribe("identify/result", onIdentifyResult);
+	dojo.subscribe("identify/submitted", onIdentifySubmitted);
 
 	log("inspecting mapDialog");
 	log(dojo.style(mapDialog.domNode, "top"));
@@ -514,6 +519,12 @@ function createMegaMap() {
 	});
 	
 	
+	infoWindow = new esri.dijit.Popup({
+          fillSymbol: new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, 
+          	new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, 
+          		new dojo.Color([255,0,0]), 2), 
+          		new dojo.Color([255,255,0,0.25]))
+        }, dojo.create("div"));
 	
 	megaMap = new esri.Map("megaMapNode", {
 		extent : esri.geometry.fromJson(config.app.defaultExtent.toJson()),
@@ -552,14 +563,14 @@ function resizeMegaMap() {
 }
 
 function onMegaMapClick(evt) {
-	//    log("mega map clicked, sending identify request");
-	//    var _params = {};
-	//    _params.geometry = evt.mapPoint;
-	//    _params.extent = megaMap.extent;
-	//    _params.width = megaMap.width;
-	//    _params.height = megaMap.height;
-	//    _params.screenPoint = evt.screenPoint; // just in case
-	//    dojo.publish("identify", [_params]);
+	   log("mega map clicked, sending identify request");
+	   var _params = {};
+	   _params.geometry = evt.mapPoint;
+	   _params.extent = megaMap.extent;
+	   _params.width = megaMap.width;
+	   _params.height = megaMap.height;
+	   _params.screenPoint = evt.screenPoint; // just in case
+	   dojo.publish("identify", [_params]);
 }
 
 var megaMapTop, megaMapBottom;
@@ -621,9 +632,30 @@ function onMegaMapUpdateEnd(evt) {
 	checkMapDialogLayout();
 }
 
+/**
+ * Gets called when 
+ */
 function onIdentifyResult(results) {
 	log("App: Identify Result received");
 	log(results);
+}
+
+/**
+ * Gets called when identify is submitted
+ * @param args An array of arguments [deferred, screenPoint] where deferred is the Deferred returned by 
+ *  identifyTask.execute, and screenPoint is the screenPoint where the user clicked
+ */
+function onIdentifySubmitted(params) {
+	log("App: Identify Submitted");
+	log(params);
+	if (megaMap){
+		try{
+		megaMap.infoWindow.setFeatures([params.deferred])
+		} catch(e){
+			err(e);
+		}		
+		megaMap.infoWindow.show(params.screenPoint);
+	}
 }
 
 dojo.addOnLoad(init);
