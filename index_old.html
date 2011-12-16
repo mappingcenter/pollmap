@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    
+    <!-- CHANGE THESE! -->
+    <title>Earth Day PollMap - How would you spend $100?</title>
+    <meta name="description" content="Observe Earth Day 2011 by letting us know how you would invest in protecting our planet. Compare your choices with other participants around the world.">
+    <meta name="keywords" content="Earth Day, FanMap, climate change, global warming, population, energy, sustainability, environmental education, sustainable">
+    <meta name="author" content="Esri Mapping Center">
+    <meta property="og:title" content="Earth Day PollMap" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="http://" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="PollMap: Earth Day Edition" />
+    <meta property="fb:admins" content="xxx" />
+    
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.5/js/dojo/dijit/themes/tundra/tundra.css">
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.5/js/dojo/dojo/resources/dojo.css">
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.5/js/esri/dijit/css/Popup.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+      var djConfig = {
+          parseOnLoad: false,
+          baseUrl: "./",
+          isDebug: true,
+          modulePaths: {
+              "esri.pollmap": "./js/esri/pollmap",
+              "esri.mappingcenter": "./js/esri/mappingcenter"
+          }
+      };
+    </script>
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=2.5"></script>
+    <script type="text/javascript" src="js/libs/crir.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+    <!-- UNCOMMENT FOR GOOGLE ANALYTICS -->
+    <!--
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      // CHANGE THIS if you want to use analytics
+      // _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      // _gaq.push(['_setDomainName', '.mysite.com']);
+      _gaq.push(['_trackPageview']);
+      
+      (function(){
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    -->
+  </head>
+  <body class="tundra foam">
+    <div dojotype="dijit.layout.BorderContainer" design="sidebar" gutters="false" style="width: 100%; height: 100%; margin: 0;" id="wrapper">
+      <div id="sidebar" region="left" dojotype="dijit.layout.ContentPane">
+        <a id="aboutButton" href="#" dojoAttachEvent="onclick:showAbout"></a>
+      </div>
+      <div id="mapsContainer" region="center" dojotype="dijit.layout.ContentPane">
+      </div>
+      <div id="voteWindow" region="center" class="centered" dojotype="esri.pollmap.widgets.VoteWindow" dataSource="config" dataObj="questions">
+      </div>
+    </div>
+    <a id="logo" class="logo-sm" href="http://www.esri.com/" target="_blank"></a>
+    <div class="credits">
+      a <a href="http://mappingcenter.esri.com/" target="_blank">Mapping Center</a>
+      project<span class="separator"> | </span>
+      <a href="#" onclick="dijit.byId('aboutWindow').show();">about the app</a>
+    </div>
+    <div class="social-widgets vertical">
+    <!-- Uncomment this to use social widgets --
+      <fb:like href="http://link/to/map" layout="box_count" show_faces="false" width="20" font="" colorscheme="dark">
+      </fb:like>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-text="Vote!" data-count="none" data-via="mappingcenter" data-url="http://link/to/map">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+     -->
+    </div>
+    <!-- controllers -->
+    
+    <!--div id="configController" dojotype="esri.pollmap.widgets.ConfigController"></div-->
+    
+    <div id="mapCenterZoomController" dojotype="esri.pollmap.widgets.MapCenterZoomController">
+    </div>
+    <div id="geocoderController" dojotype="esri.pollmap.widgets.Geocoder">
+    </div>
+    <div id="summarizeController" dojotype="esri.pollmap.widgets.SummaryController">
+    </div>
+    <div id="identifyController" dojotype="esri.pollmap.widgets.IdentifyController">
+    </div>
+    <div id="aboutWindow" dojotype="dijit.Dialog" title="About the PollMap&trade;: Earth Day Edition" href="js/esri/pollmap/templates/AboutWindow.html">
+    </div>
+    <!-- UNCOMMENT THIS TO USE TWITTER BUTTON
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    -->
+    
+    <!-- UNCOMMENT THIS TO USE FACEBOOK LIKE BUTTONS
+    <div id="fb-root">
+    </div>
+    <script type="text/javascript">
+      window.fbAsyncInit = function(){
+          FB.init({
+              appId: 'xxx',
+              status: true,
+              cookie: true,
+              xfbml: true
+          });
+      };
+      (function(){
+          var e = document.createElement('script');
+          e.async = true;
+          e.src = document.location.protocol +
+          '//connect.facebook.net/en_US/all.js';
+          document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>
+    -->
+  </body>
+</html>
