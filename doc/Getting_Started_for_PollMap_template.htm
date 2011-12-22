@@ -2,7 +2,8 @@
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 14 (filtered)">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>Template:  Public Opinion Map for ArcGIS 10</title>
 <style>
 <!--
  /* Font Definitions */
@@ -10,8 +11,8 @@
 	{font-family:Wingdings;
 	panose-1:5 0 0 0 0 0 0 0 0 0;}
 @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
 @font-face
 	{font-family:Cambria;
 	panose-1:2 4 5 3 5 4 6 3 2 4;}
@@ -21,9 +22,6 @@
 @font-face
 	{font-family:Tahoma;
 	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:Consolas;
-	panose-1:2 11 6 9 2 2 4 3 2 4;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0in;
@@ -69,6 +67,38 @@ h3
 	font-size:11.0pt;
 	font-family:"Cambria","serif";
 	color:#4F81BD;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.15in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:22.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
 p.MsoHeader, li.MsoHeader, div.MsoHeader
 	{mso-style-link:"Header Char";
 	margin:0in;
@@ -125,18 +155,33 @@ p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
 	font-family:"Cambria","serif";
 	color:#17365D;
 	letter-spacing:.25pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
 a:link, span.MsoHyperlink
 	{color:blue;
 	text-decoration:underline;}
 a:visited, span.MsoHyperlinkFollowed
 	{color:purple;
 	text-decoration:underline;}
-p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
-	{mso-style-link:"Plain Text Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	font-size:10.5pt;
-	font-family:Consolas;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
 p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
 	{mso-style-link:"Balloon Text Char";
 	margin:0in;
@@ -177,16 +222,49 @@ p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxS
 	line-height:115%;
 	font-size:11.0pt;
 	font-family:"Calibri","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
 span.BalloonTextChar
 	{mso-style-name:"Balloon Text Char";
 	mso-style-link:"Balloon Text";
 	font-family:"Tahoma","sans-serif";}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
 	font-family:"Cambria","serif";
-	color:#365F91;
-	font-weight:bold;}
+	color:#17365D;
+	letter-spacing:.25pt;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	color:black;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
 span.Heading2Char
 	{mso-style-name:"Heading 2 Char";
 	mso-style-link:"Heading 2";
@@ -199,31 +277,26 @@ span.Heading3Char
 	font-family:"Cambria","serif";
 	color:#4F81BD;
 	font-weight:bold;}
-span.TitleChar
-	{mso-style-name:"Title Char";
-	mso-style-link:Title;
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
 	font-family:"Cambria","serif";
-	color:#17365D;
-	letter-spacing:.25pt;}
-span.PlainTextChar
-	{mso-style-name:"Plain Text Char";
-	mso-style-link:"Plain Text";
-	font-family:Consolas;}
-span.HeaderChar
-	{mso-style-name:"Header Char";
-	mso-style-link:Header;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-link:Footer;}
-.MsoChpDefault
-	{font-family:"Calibri","sans-serif";}
+	color:#365F91;
+	font-weight:bold;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-link:"Comment Text";}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-link:"Comment Subject";
+	font-weight:bold;}
 .MsoPapDefault
 	{margin-bottom:10.0pt;
 	line-height:115%;}
  /* Page Definitions */
  @page WordSection1
 	{size:8.5in 11.0in;
-	margin:.5in .5in .5in .5in;}
+	margin:1.0in 1.0in 1.0in 1.0in;}
 div.WordSection1
 	{page:WordSection1;}
  /* List Definitions */
@@ -236,1529 +309,1696 @@ ul
 
 </head>
 
-<body lang=EN-US link=blue vlink=purple style='text-justify-trim:punctuation'>
+<body lang=EN-US link=blue vlink=purple>
 
 <div class=WordSection1>
 
-<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0in 0in 4.0pt 0in'>
+<p class=MsoTocHeading>Contents</p>
 
-<p class=MsoTitleCxSpFirst><span style='position:absolute;z-index:251660288;
-margin-left:765px;margin-top:15px;width:156px;height:69px'><img width=156
-height=69 src="Getting_Started_for_PollMap_template_files/image001.jpg"
-alt="Description: esriLogo"></span><span style='font-size:14.0pt;color:black'>Template:</span><span
-style='font-size:14.0pt;color:windowtext'>     PollMap Application Template for
-ArcGIS 10</span></p>
+<p class=MsoToc1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.15in'><a href="#_Toc312316454">Introduction<span style='color:
+windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
 
-<p class=MsoTitleCxSpMiddle><span style='font-size:14.0pt;color:black'>Version:        1.0</span></p>
+<p class=MsoToc2><a href="#_Toc312316455">What’s Included<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
 
-<p class=MsoTitleCxSpLast><span style='font-size:14.0pt;color:black'>Date:              April
-28, 2011</span></p>
+<p class=MsoToc2><a href="#_Toc312316456">Before you start:<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
 
-</div>
+<p class=MsoToc2><a href="#_Toc312316457">Software Environment<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
 
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Introduction</span></h1>
+<p class=MsoToc1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.15in'><a href="#_Toc312316458">Let’s go!  Download Template and
+Unzip the Contents<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+<p class=MsoToc2><a href="#_Toc312316459">Template Contents<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>This PollMap Application allows you to capture and map public
-opinion on any issue or topic you configure. It encourages participation
-through a user experience that focuses on simple things: reading the question, choosing
-among the options presented, and then viewing results immediately on the map. This
-gives the visitor instant feedback and an option to explore the map to see how
-their vote fits within local, regional and even national contexts.</span></p>
+<p class=MsoToc2><a href="#_Toc312316460">Configuring your PollMap<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>8</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
+<p class=MsoToc2><a href="#_Toc312316461">Configure the user interface to start
+using your poll’s questions<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>This map is known simply as PollMap, or as the Esri FanMap™ when
-applied to sports topics. You can see an example of this template at work in
-the Esri </span><a href="http://fanmap.esri.com/collegehoops"><span
-style='font-family:"Calibri","sans-serif"'>FanMap™: Bracketography Edition</span></a><span
-style='font-family:"Calibri","sans-serif";color:black'>.</span></p>
+<p class=MsoToc2><a href="#_Toc312316462">Review and Learn about the Data<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
+<p class=MsoToc2><a href="#_Toc312316463">Determine your geographic scope and
+how you want the maps to look<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'><img border=0 width=882 height=440 id="Picture 4"
-src="Getting_Started_for_PollMap_template_files/image002.jpg"></span></p>
+<p class=MsoToc2><a href="#_Toc312316464">Edit Maps behind Your Services to
+Match Your Questions and Responses<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></p>
 
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 1: Sample PollMap about water.</span></i></p>
+<p class=MsoToc2><a href="#_Toc312316465">Serving Your Newly Edited Maps<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>11</span></a></p>
 
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>What is included? </span></h1>
+<p class=MsoToc2><a href="#_Toc312316466">Configure Additional Services<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+<p class=MsoToc2><a href="#_Toc312316467">Configuring the Social Media Widgets<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>This is version 1.0 of the PollMap application template. It
-supports a basic type of “A vs. B” question and all documentation is written
-with that in mind. </span></p>
+<p class=MsoToc2><a href="#_Toc312316468">Determine How People Will Learn About
+Your Map<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
+<p class=MsoToc2><a href="#_Toc312316469">Additional Branding<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>This JavaScript application is built using the ArcGIS API for
-JavaScript. It contains an interactive map intended for use in a standard web
-browser. It does not require browser plug-ins or installs. This application
-accesses several map services and geoprocessing services.</span></p>
+<p class=MsoToc2><a href="#_Toc312316470">System Architecture<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
+<p class=MsoToc2><a href="#_Toc312316471">Considerations for Deploying your
+PollMap on a Production Server<span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>The template includes sample data to record votes by postal code
-in the U.S. and Canada, and map documents (MXDs) to edit their symbology on the
-map. Note: it is possible to substitute other point data to gather the votes,
-e.g. see the Esri </span><a href="http://pollmap.esri.com/earthday"><span
-style='font-family:"Calibri","sans-serif"'>Earth Day Poll Map</span></a><span
-style='font-family:"Calibri","sans-serif";color:black'> which uses cities of
-the world. That level of customization is not described in this document.</span></p>
+<p class=MsoToc1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.15in'><a href="#_Toc312316472">How Voting Works<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
+<p class=MsoToc1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.15in'><a href="#_Toc312316473">Analyzing the Results<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>The template includes two geoprocessing scripts: one to record
-incoming votes and another to summarize those votes by location. </span></p>
+<p class=MsoToc1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.15in'><a href="#_Toc312316474">Additional Resources<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
+<p class=MsoToc1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.15in'><a href="#_Toc312316475">Known Issues<span style='color:
+windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>18</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>The template includes three map services: one service
-(zips_winkel) to provide access to the postal codes to geoprocessing scripts,
-and two services (Question01 and Question02) to symbolize the dominant vote
-count at each location.</span></p>
+<p class=MsoToc1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.15in'><a href="#_Toc312316476">Appendix A:  Definition Query
+Examples<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+<p class=MsoToc2><a href="#_Toc312316477">Radio (2 Choices)<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>The template uses a simple multi-scale basemap hosted by Esri for
-use by this application. The map is in the Winkel-Tripel projection, centered
-on North America. See details about this projection </span><a
-href="http://blogs.esri.com/Support/blogs/mappingcenter/archive/2011/02/17/an-alternative-to-web-mercator-winkle-triple.aspx"><span
-style='font-family:"Calibri","sans-serif"'>here</span></a><span
-style='font-family:"Calibri","sans-serif";color:black'>. If you to deploy this
-template in a site which may attract more than 100 visitors an hour, please </span><a
-href="mailto:jherries@esri.com"><span style='font-family:"Calibri","sans-serif"'>contact
-us</span></a><span style='font-family:"Calibri","sans-serif";color:black'> so
-that we can work with you to arrange proper support.</span></p>
+<p class=MsoToc2><a href="#_Toc312316478">Radio (3 or more Choices)<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
 
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Web Configuration</span></h1>
+<p class=MsoToc2><a href="#_Toc312316479">Allocation<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
 
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Microsoft
-Internet Explorer 8/9, Mozilla Firefox 3.6 or higher, Google Chrome 10 or
-higher</span></p>
+<p class=MsoToc1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.15in'><a href="#_Toc312316480">Appendix B:  Config.js question
+type examples<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>20</span></a></p>
 
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>1024x768 screen
-resolution recommended</span></p>
+<p class=MsoToc2><a href="#_Toc312316481">Radio (2 Choices)<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>20</span></a></p>
 
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Software Environment </span></h1>
+<p class=MsoToc2><a href="#_Toc312316482">Autocomplete (<i>n</i> Choices)<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>20</span></a></p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>The following software must be installed and configured: </span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>ArcGIS Desktop
-10 with Service Pack 1</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>ArcGIS Server 10
-with Service Pack 1 for the Microsoft .Net Framework – Standard or Advanced </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in'><span style='font-family:"Calibri","sans-serif"'>Note:
-This template has been optimized for ArcGIS Server the Microsoft.Net Framework.
-Other configurations have not been tested.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Additional software you may want to use:</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Notepad,
-Notepad++, DreamWeaver, IDLE (for editing .js files, .html files, .py scripts)</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>ColorPic (for
-checking and choosing RGB color values and converting them to HEX values for
-web pages)</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Firefox browser
-with the Firebug plug-in (to help diagnose issues with the application)</span></p>
-
-<span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'><br clear=all style='page-break-before:always'>
+<span style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:always'>
 </span>
 
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
-color:black'>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%;
+font-family:"Cambria","serif";color:#365F91'>&nbsp;</span></b></p>
 
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Template Contents </span></h1>
+<h1><a name="_Toc312316454">Introduction</a></h1>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>The following files are provided in the PollMap Application
-template ZIP file, which by default will unzip to </span></p>
+<p class=MsoNormal>This Public Opinion Map, also known as the Esri FanMap™ or
+PollMap, allows you to capture and map public opinion on any issue or topic you
+configure the template to address.  It encourages participation through a
+simple user experience that focuses on simple things: reading the question(s)
+and choosing among the options presented, and then immediately viewing results
+on the map.  This gives the visitor instant feedback and an option to explore
+the map to see how their vote fits within local, regional and even national and
+global contexts.</p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+<p class=MsoNormal><b><img width=625 height=312 id="Picture 4"
+src="Getting_Started_for_PollMap_template_files/image001.jpg"></b></p>
 
-<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-color:black'>&lt;your_directory&gt;\PollMapTemplate (e.g.
-D:\GIS\ArcGISTemplates\PollMapTemplate)</span></p>
+<p class=MsoNormal><strong><span style='font-family:"Calibri","sans-serif"'>Figure
+1: The sample poll this template includes allows people to vote their
+preference.</span></strong></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+<p class=MsoNormal>This template is built using the Esri JavaScript API.  It is
+an interactive map primarily intended for use in a standard web browser or
+tablet device.  It requires no plug-ins or installs by the user.  Though it may
+function in smaller mobile devices like an iPhone or Droid phone, it is not
+specifically built to support those types of smaller devices.  </p>
 
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>There are three folders underneath the PollMapTemplate directory. Significant
-items are listed below.</span></p>
+<p class=MsoNormal>The template includes sample data to record votes by postal
+code in the U.S. and Canada, and URLs to basemaps hosted by Esri on basic cloud
+servers.  Contact us if you intend to deploy anything which may attract more
+than 100 visitors an hour so that we can work with you to arrange proper
+support.  Additional data for vote collection in other countries or globally by
+city is available at the <a
+href="http://www.arcgis.com/home/group.html?owner=MappingCenterTeam&amp;title=Public%20Opinion%20Maps">Public
+Opinion Poll ArcGIS Online Group</a>.</p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+<p class=MsoNormal>This is version 2.01 of the template.  Two kinds of
+questions are supported:  a basic multiple choice “A vs. B”, and an allocation
+of resources question. The documentation is written with the multiple choice
+type of question in mind.  Once you are familiar with how the template works,
+you will start to see how and where the allocation type of question is supported,
+and gain insight for customizing the experience to support other kinds of
+questions.  This documentation will not spell out that path for you.</p>
+
+<p class=MsoNormal><img width=276 height=325
+src="Getting_Started_for_PollMap_template_files/image002.jpg" align=left
+hspace=12><img width=624 height=370
+src="Getting_Started_for_PollMap_template_files/image003.jpg" align=left
+hspace=12><b>Figure 2: FanMap: Bracketography Edition, an example of what this
+template can support</b></p>
+
+<p class=MsoNormal>The template includes everything you need to have a working
+application on a single computer within a couple of hours.  </p>
+
+<p class=MsoNormal>The application works well with the following options:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Microsoft Internet Explorer 8/9, Mozilla Firefox 3.6 or higher,
+Google Chrome 10 or higher, and Safari 5.1 and higher.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span> 1280x1024 Screen Resolution. It can work on smaller screens, it mainly
+depends on height of the Vote box (see Figure 2 above)</p>
+
+<h2><a name="_Toc312316455">What’s Included</a></h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Web application source code</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Geoprocessing source code</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Map service MXDs</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Data for postal codes in the U.S. and Canada</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>URLs to basemaps you can use during development</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Simple documentation</p>
+
+<h2><a name="_Toc312316456">Before you start:</a></h2>
+
+<p class=MsoNormal>This template’s documentation presumes you’ll get everything
+running on a single machine using the sample application, maps and data; and
+then configure that deployment to accommodate your needs.  You’ll need to use a
+computer running Microsoft IIS and ArcGIS Server 10.   See the section near the
+end that discusses options for server architectures. The idea for now is that
+you are working on what can be considered a development environment and will be
+configuring that until you’re ready to move your work into a production
+environment.</p>
+
+<h2><a name="_Toc312316457">Software Environment</a> </h2>
+
+<p class=MsoNormal>The following software must be installed and configured: </p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>ArcGIS Server 10 w/ SP 1 for the Microsoft .Net Framework –
+Standard or Advanced </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>ArcGIS Desktop 10 w/ SP 1 (and Maplex Labeling Extension if you
+want to cache your own basemaps from the “canvas” basemap templates, to be made
+available summer 2011)</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>(recommended for final deployment) ArcSDE for Microsoft SQL
+Server 2008</p>
+
+<p class=MsoNormal>Note: ArcGIS Server can be configured on other supported web
+servers but this template has been optimized for ArcGIS Server the
+Microsoft.Net Framework.  Other configurations have not been tested.</p>
+
+<p class=MsoNormal>Firefox with the Firebug plug-in (or Google Chrome) can
+really help diagnose any issues as they are encountered. </p>
+
+<p class=MsoNormal>Once you have the sample web app and maps running (a few
+steps from now, instructions are below), you’ll want to modify colors to suit
+your subject, and have the ArcMap colors of those features match the charts
+produced in the app.  ColorPic is a great tool for checking colors onscreen and
+converting RGB values (used in ArcMap) to HEX values (used in the web pages).</p>
+
+<p class=MsoNormal>ArcSDE is recommended for deployments that expect to
+generate higher amounts of traffic.  The main consideration is concurrent use,
+meaning more than 1 user per 1-2 seconds.  ArcSDE is multi-user and designed to
+accommodate this kind of traffic without dropping or shutting out users.</p>
+
+<h1><a name="_Toc312316458">Let’s go!  Download Template and Unzip the Contents</a></h1>
+
+<p class=MsoNormal>Presumably you’ve already downloaded the template; hence you
+are reading this document.  If not, search <a href="http://www.arcgis.com">www.arcgis.com</a>
+for “Public Opinion Map” and get the latest version, and work with that
+documentation.  This documentation covers Version 2.01.</p>
+
+<p class=MsoNormal>Unzip the file to your wwwroot directory, under /WaterPoll
+(or any other name desired – this documentation assumes /WaterPoll.  You can
+use anything you want, but fair warning: you won’t want to change this later
+unless you absolutely have to.</p>
+
+<p class=MsoNormal>After you unzip everything successfully, go to your web
+browser and check if he URL works.  For example, my machine name is called
+“skyray” so my URL is <a href="http://skyray.esri.com/WaterPoll">http://skyray.esri.com/WaterPoll</a>. 
+You should see a dark screen and a Vote window in front of that.  No maps will
+appear at this point.  </p>
+
+<p class=MsoNormal>If you try to submit a vote at this point, you’ll get an
+error message.  That makes sense – we have not started any services yet.</p>
+
+<p class=MsoNormal>If you don’t see the dark background and Vote window popup, troubleshoot
+based on the errors you see, or get an IIS expert to take a look.  A good
+strategy is to type in the exact error message you are seeing into a search
+engine and look for possible causes.</p>
+
+<p class=MsoNormal>If the site otherwise works, let’s move on.  </p>
+
+<h2><a name="_Toc312316459">Template Contents</a></h2>
+
+<p class=MsoNormal>The following files are provided in the ZIP file.  This is
+for an overview only – the sequence by which you need to make changes is
+described in the next section.  This table is for reference only.</p>
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none'>
  <tr>
-  <td width=199 valign=top style='width:119.45pt;border:solid windowtext 1.0pt;
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Template Directory</span></b></p>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>Template Directory</b></p>
   </td>
-  <td width=210 valign=top style='width:125.85pt;border:solid windowtext 1.0pt;
+  <td width=224 valign=top style='width:134.55pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Item</span></b></p>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>Item</b></p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border:solid windowtext 1.0pt;
+  <td width=315 valign=top style='width:189.15pt;border:solid windowtext 1.0pt;
   border-left:none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><b><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Description</span></b></p>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>Description</b></p>
   </td>
  </tr>
  <tr>
-  <td width=199 valign=top style='width:119.45pt;border:solid windowtext 1.0pt;
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>PollMapTemplate</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>(root)</p>
   </td>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Getting Started with the PollMap Application Template.pdf</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>index.html</p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>A PDF document that describes how to configure template and
-  changes made with each release.</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>The web page used to launch the PollMap / FanMap.  <span
+  style='color:red'>Edit this file so that it contains the title, description,
+  tags etc. you want.</span></p>
   </td>
  </tr>
  <tr>
-  <td width=199 rowspan=2 valign=top style='width:119.45pt;border:solid windowtext 1.0pt;
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>/Application</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
   </td>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>/PollMap subdirectory</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>PollMap documentation.docx</p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Directory containing the application pages, javascript, style
-  sheets, images. </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>That’s what you’re reading. I hope.</p>
   </td>
  </tr>
  <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>/Tools/gp subdirectory</span></p>
-  </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Directory containing the geoprocessing scripts.</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=199 rowspan=4 valign=top style='width:119.45pt;border:solid windowtext 1.0pt;
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>/Documentation</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>css</p>
   </td>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>DataDictionary.html</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>style.css</p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>An HTML document that contains a description of the Votes.gdb
-  content.</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Controls many UI elements. Strictly speaking, you should not need to
+  edit anything here.  </p>
   </td>
  </tr>
  <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Question01.html</span></p>
-  </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>An HTML document that describes the contents of Question01.mxd</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Question02.html</span></p>
-  </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>An HTML document that describes the contents of Question02.mxd</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Zips_Winkel.html</span></p>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>&nbsp;</span></p>
-  </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>An HTML document that describes the contents of Zips_Winkel.mxd</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=199 rowspan=8 valign=top style='width:119.45pt;border:solid windowtext 1.0pt;
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>/MapsandGeodatabase</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>database</p>
   </td>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Question01.mxd </span></p>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>votes.gdb</p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>The map document used to author the Question01 map.</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Question01.msd</span></p>
-  </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>The map service definition used by the Question01 map service.</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>This file geodatabase captures the incoming votes and also captures
+  the summarizations by postal code.   Out of the box it contains simulated
+  votes, so that you’ll see something on the sample maps.  It also contains a
+  “blank” database so that you can start fresh when ready, and a copy of a
+  simulated votes table.</p>
   </td>
  </tr>
  <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Question02.mxd</span></p>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>gp</p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>The map document used to author the Question02 map. </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Schema.gdb</p>
   </td>
- </tr>
- <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Question02.msd</span></p>
-  </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>The map service definition used by the Question02 map service</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>An empty schema that’s needed for the GP to function.  </p>
   </td>
  </tr>
  <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Zips_Winkel.mxd</span></p>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Simple map service to serve postal code points to the
-  geoprocessing scripts. No symbology editing needed.</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>summarize.py</p>
   </td>
- </tr>
- <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Zips_Winkel.msd</span></p>
-  </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>The map service definition used to author the Zips_Winkel map
-  service.</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Summarizes the vote count in a given map extent.  Results are used to
+  update the pie chart onscreen.  <span style='color:red'>Edit this file if you
+  change the location of your votes tables.  </span></p>
   </td>
  </tr>
  <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Votes.gdb</span></p>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>The Votes geodatabase contains a simple votes table to record
-  each vote as it comes in, and a point layer to record the summary of votes
-  for each choice in that location.</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>vote.py</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Records the vote and increments the totals in a given geography.  <span
+  style='color:red'>Edit this file if you change the location of your votes
+  tables.</span></p>
   </td>
  </tr>
  <tr>
-  <td width=210 valign=top style='width:125.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Votes_samples.gdb</span></p>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
   </td>
-  <td width=389 valign=top style='width:233.5pt;border-top:none;border-left:
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoPlainText><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-  color:black'>Contains sample tables and layers for testing.</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>vote.tbx</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Toolbox which contains the above scripts.  This toolbox is served in
+  ArcGIS Server.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>js</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>config.js</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>Edit this file to configure the choices
+  available to the user, and their colors in the pie charts.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>plugins.js</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Should not need to edit this.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>script.js</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Should not need to edit this.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>/libs directory</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Should not need to edit anything in this directory.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>/esri/PollMap/Templates directory</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>VoteWindow.html</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>Edit this file to configure the question
+  asked on the Vote Window.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>AboutWindow.html</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>Edit this file to give details of your
+  implementation.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>GeocodeView.html</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>Edit this file if desired.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>SummaryPane.html</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>Edit this file if desired.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>/js/esri/pollmap/img directory</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>1sidebar.png</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>This has an example of Esri’s branding of the sidebar.  <span
+  style='color:red'>Create your own version of this file and rename it
+  “sidebar.png” for the app to display.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>lib</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Dojo items are here.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>media</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Sample graphics files. Nothing to change here.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>mxds</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Question01_highvote.mxd</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>The map document used to author the map for Question01.  Contains
+  symbology for Question01’s choices.  <span style='color:red'>Update this .MXD
+  and use it to create your .MSD file for serving.  </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Question01_highvote.msd</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>The map service definition used to author the Question01 map service.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Question02_highvote.mxd</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>The map document used to author the map for Question02.  Contains
+  symbology for Question02’s choices.  <span style='color:red'>Update this .MXD
+  and use it to create your .MSD file for serving.  </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Question02_highvote.msd</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>The map service definition used to author the Question02 map service.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Zips_Winkel.mxd</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Simple map service to serve postal code points.  No editing needed.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=259 valign=top style='width:155.1pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+  <td width=224 valign=top style='width:134.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Zips_Winkel.msd</p>
+  </td>
+  <td width=315 valign=top style='width:189.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>The map service definition used to author the Zips_Winkel map service.</p>
   </td>
  </tr>
 </table>
 
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>How to configure and use the PollMap Template</span></h1>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>First, you will get the sample PollMap up and running on your
-machine. You will configure the PollMap template for your environment, and in
-doing so, learn how to publish and serve your own poll maps using ArcGIS Server
-and your organization’s data. Then, the second set of steps outlines how to
-customize the PollMap to contain your questions, choices and symbology for the
-maps and charts.</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>To complete these steps, you will need experience with ArcGIS
-Server and Microsoft’s Internet Information Server (IIS). If you are new to
-JavaScript applications, this template will demonstrate a pattern you can use
-to deploy your own JavaScript application and publish web maps using ArcGIS
-Server.</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Implementation Steps</span></h1>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Follow the six implementation steps below to publish and serve the
-PollMap template in your organization.  </span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 1 – Extract the ZIP File Contents</span></h1>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>1.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Extract the contents of
-the PollMap Application Template you downloaded from ArcGIS.com in a directory
-on your computer. </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-color:black'>&lt;your_directory&gt;\PollMapTemplate (e.g.
-D:\GIS\ArcGISTemplates\PollMapTemplate)</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 2 – Publish Map Services ( Zips_Winkel, Question01 and
-Question02)</span></h1>
-
-<p class=MsoPlainText style='margin-left:.25in'><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in;text-autospace:
-none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>1.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Copy everything from the
-</span><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-color:black'>&lt;your_directory&gt;\ArcGISTemplates\PollMapTemplate\MapsandGeodatabase
-</span><span style='font-family:"Calibri","sans-serif";color:black'>directory
-to a directory location that is accessible to your ArcGISSOC Account on your
-ArcGIS Server computer.  The ArcGISSOC Account will need read </span><a
-href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//002v0000000p000000.htm"><span
-style='font-family:"Calibri","sans-serif"'>permissions</span></a><span
-style='font-family:"Calibri","sans-serif";color:black'> to this directory.</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-autospace:none'><span
-style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Or, use Windows Explorer to grant read permissions to the
-ArcGISSOC Account for the following directory: </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-color:black'>&lt;your_directory&gt;\ArcGIS Templates\PollMapTemplate\MapsandGeodatabase
-</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=535 height=553
-src="Getting_Started_for_PollMap_template_files/image003.png"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 2: Grant read permissions to the ArcGISSOC Account</span></i></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>2.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Next, you will publish
-the sample maps as map services. Later on, you will modify those maps, but for
-now, just publish them “as is.” Using ArcCatalog, navigate to the
-MapsandGeodatabase directory and publish the three dynamic map services needed
-by the PollMap Application:</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Publish the
-Zips_Winkel.msd as a map service. Use a folder if desired, and accept all other
-defaults. </span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Publish the
-Question01.msd as a map service. Use a folder if desired, and accept all other
-defaults.</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Publish the
-Question02.msd as a map service. Use a folder if desired, and accept all other
-defaults.</span></p>
-
-<p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
-line-height:normal;text-autospace:none'><span style='font-size:12.0pt;
-font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'><img border=0 width=754 height=300
-src="Getting_Started_for_PollMap_template_files/image004.jpg"></span></i></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 3: Sample services running in ArcGIS Server</span></i></p>
-
-<p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
-line-height:normal;text-autospace:none'><span style='font-size:12.0pt;
-font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>3.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Go to the ArcGIS
-Services Directory and record the REST End Points (full URL paths) of each
-service. Note: The </span><a
-href="http://help.arcgis.com/en/webapi/javascript/arcgis/help/jshelp_start.htm"><span
-style='font-family:"Calibri","sans-serif";color:black;text-decoration:none'>ArcGIS
-Services Directory</span></a><span style='font-family:"Calibri","sans-serif";
-color:black'> is typically found at:
-http://&lt;yourserver&gt;/ArcGIS/rest/services</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 3 – Publish a Geometry Service</span></h1>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Using ArcCatalog, publish a </span><a
-href="ttp://help.arcgis.com/en/arcgisserver/10.0/help/arcgis_server_dotnet_help/index.html"><span
-style='font-family:"Calibri","sans-serif";color:black;text-decoration:none'>geometry
-service</span></a><span style='font-family:"Calibri","sans-serif";color:black'>
-to ArcGIS Server:</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>1.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Right-click on the
-server in ArcCatalog, and select “Add a New Service”</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>2.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>For type, select a
-geometry service. This sets the name automatically (see Figure 4).</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>3.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Accept all other
-defaults. Click Finish.</span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:.25in;margin-bottom:.0001pt;line-height:normal;text-autospace:none'><span
-style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=500 height=474 id="Picture 2"
-src="Getting_Started_for_PollMap_template_files/image005.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 4: Publish a geometry service</span></i></p>
-
-<span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'><br clear=all style='page-break-before:always'>
-</span>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
-color:black'>&nbsp;</span></b></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 4 –Configure the voting script tools</span></h1>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>1.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Using Windows Explorer,
-navigate to the tools directory:</span></p>
-
-<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-color:black'>&lt;your_directory&gt;\ArcGIS Templates\PollMapTemplate\Application\Tools\gp</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>2.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Open the summarize.py
-file using Notepad, Notepad++, or a python editing tool such as IDLE. One line
-of code needs to be changed in this configuration. Set the path of the database
-(db) to the location of your Votes.gdb (see Figure 5).</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in'><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=557 height=386 id="Picture 1"
-src="Getting_Started_for_PollMap_template_files/image006.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 5: Edit the path to the geodatabase</span></i></p>
-
-<p class=MsoPlainText style='margin-left:.25in'><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.25in;text-indent:-.25in'><span
-style='font-family:"Calibri","sans-serif";color:black'>3.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-family:"Calibri","sans-serif";color:black'>Open the votes.py file
-in a python editing tool. One line of code needs to be changed in this
-configuration. Set the path of the database (db) to the location of your Votes.gdb
-(see Figure 6).</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;margin-bottom:.0001pt;
-line-height:normal;text-autospace:none'><span style='font-size:12.0pt;
-font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin:0in;margin-bottom:.0001pt;
-line-height:normal;text-autospace:none'><span style='font-size:12.0pt;
-font-family:"Times New Roman","serif"'><img border=0 width=556 height=395
-id="Picture 3" src="Getting_Started_for_PollMap_template_files/image007.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 6: Edit the path to the Votes geodatabase</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 5 –Publish the Vote Geoprocessing Services</span></h1>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>After editing the
-scripts, copy everything from </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal;
-text-autospace:none'><span style='font-size:10.0pt;color:black'>&lt;your_directory&gt;\ArcGISTemplates\PollMapTemplate\Tools\gp
-</span><span style='font-size:10.5pt;color:black'>to a directory location that
-is accessible to your ArcGISSOC Account on your ArcGIS Server computer.</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal;
-text-autospace:none'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='text-indent:.25in'><span style='font-family:"Calibri","sans-serif";
-color:black'>Or, use Windows Explorer to grant the ArcGISSOC Account access to
-the following directory: </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>            </span></p>
-
-<p class=MsoPlainText style='margin-left:.75in;text-indent:-.25in'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.0pt;font-family:"Calibri","sans-serif";
-color:black'>&lt;your_directory&gt;\ArcGIS Templates\PollMapTemplate\Tools\gp</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
-0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;line-height:
-normal;text-autospace:none'><span style='font-size:10.5pt;color:black'>2.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-size:10.5pt;color:black'>Using ArcCatalog, publish the Vote.tbx as
-a </span><a
-href="http://help.arcgis.com/en/arcgisserver/10.0/help/arcgis_server_dotnet_help/index.html"><span
-style='font-size:10.5pt;color:black;text-decoration:none'>geoprocessing service</span></a><span
-style='font-size:10.5pt;color:black'> in ArcGIS Server.  </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Right-click on
-your “PollMap” folder in the ArcGIS Server instance in ArcCatalog, and select
-“Add a New Service.” If you are not using a folder, right-click on the server
-instance instead. </span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>For type, select
-geoprocessing service. Name the geoprocessing service “Vote” (singular). See
-Figure 7. Click Next.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:.25in;margin-bottom:.0001pt;line-height:normal;text-autospace:none'><span
-style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img border=0
-width=660 height=624 id="Picture 15"
-src="Getting_Started_for_PollMap_template_files/image008.jpg"></span></p>
-
-<p class=MsoPlainText style='margin-left:.25in'><i><span style='font-family:
-"Calibri","sans-serif";color:black'>Figure 7: Choose where to publish the Vote
-toolbox.</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Select execution
-type as synchronous. See Figure 8.</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Select “A
-toolbox” and enter the location of the Vote.tbx .</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Accept all other
-defaults and click Next. Accept all other defaults the rest of the way. </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=760 height=659 id="Picture 12"
-src="Getting_Started_for_PollMap_template_files/image009.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 8: Setting up Vote Geoprocessing Services</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 6 –Publish the Application</span></h1>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Copy the folder </span><span
-style='font-size:10.0pt;color:black'>&lt;your_directory&gt;\ArcGISTemplates\PollMapTemplate\Application\PollMap
-</span><span style='font-size:10.5pt;color:black'>to your wwwroot directory,
-typically </span><span style='font-size:10.0pt;color:black'>c:/inetpub/wwwroot</span><span
-style='font-size:10.5pt;color:black'>.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal;
-text-autospace:none'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Go to your web browser
-and check if the URL works, e.g. </span><span class=MsoHyperlink><span
-style='font-size:10.5pt'>http://&lt;yourserver&gt;/PollMap</span></span><span
-style='font-size:10.5pt;color:black'>. If the site works, but you don’t see any
-maps, continue to the next step below. If you don’t see any application page at
-all, check that IIS is running.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal;
-text-autospace:none'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Go to </span><span
-style='font-size:10.0pt;color:black'>c:\inetpub\wwwroot\PollMap\js </span><span
-style='font-size:10.5pt;color:black'>and edit the config.js file to point to
-all the services you just created in the previous five steps. Change the six
-service URLs below to match the URLs you created earlier. See the next two
-figures for examples.  <i>(Note: Version 1.0 of the template does not utilize
-the identifyService in the config.js file).</i></span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal;
-text-autospace:none'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=780 height=319 id="Picture 10"
-src="Getting_Started_for_PollMap_template_files/image010.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 9: Edit these URLs in config.js to match your actual
-services. </span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=780 height=501 id="Picture 13"
-src="Getting_Started_for_PollMap_template_files/image011.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 10: Edit these URLs to match your actual sample services
-for Question01 and Question02.</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
-0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;line-height:
-normal;text-autospace:none'><span style='font-size:10.5pt;color:black'>4.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
-style='font-size:10.5pt;color:black'>Go to your web browser and check if the
-URL works, e.g. </span><span class=MsoHyperlink><span style='font-size:10.5pt'>http://&lt;yourserver&gt;/PollMap</span></span><span
-style='font-size:10.5pt;color:black'>. You should see something similar to that
-below, with two maps and a vote window.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=781 height=483 id="Picture 19"
-src="Getting_Started_for_PollMap_template_files/image012.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 11: The sample application with two working maps.</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Test the vote dialog box to see that the vote works. If you get an
-“I’m sorry” message, the first thing to do is </span><a
-href="http://resources.esri.com/help/9.3/arcgisserver/apis/rest/index.html?admin.html"><span
-style='font-family:"Calibri","sans-serif"'>refresh your REST cache</span></a><span
-style='font-family:"Calibri","sans-serif";color:black'> on your machine. Reload
-the page and try to vote again. If the “I’m sorry” message persists, the next
-thing to verify is that the config.js file points to the correct geoprocessing
-service URLs. Copy and paste the URLs from the config.js file to a browser to
-verify that a service is running. </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Customization Overview</span></h1>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>After you’ve confirmed that the site is basically working (as in,
-you can submit a vote and see a map afterwards with no error messages), then
-you can start modifying the questions, choices, colors and names, map services
-and data.</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>The general sequence is:</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Mock up your
-question and responses up in the UI, e.g. “Which do you favor?” or “Choose one
-of the following:”</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Modify the
-colors of the maps and pie charts to match, by choice01, choice02 etc.</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Reset the votes
-table and start voting to see how things are working.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Steps 7-11 below are the basic customization steps to follow.</span></p>
-
-<p class=MsoPlainText><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 7 –Edit Your Questions and Responses</span></h1>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Go to </span><span
-style='font-size:10.0pt;color:black'>C:\inetpub\wwwroot\PollMap\js\esri\fanmap\templates\
-</span><span style='font-size:10.5pt;color:black'>directory in Windows
-Explorer.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Edit the
-VoteWindow.html to tweak the title, prompt-title and subtitle (see Figure 11
-below). Decisions you make here flow into subsequent edits in other files, so
-it is good to get this squared away early.</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal;
-text-autospace:none'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=600 height=351 id="Picture 22"
-src="Getting_Started_for_PollMap_template_files/image013.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 12: VoteWindow.html changes.</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Go to </span><span
-style='font-size:10.0pt;color:black'>c:\inetpub\wwwroot\PollMap\js </span><span
-style='font-size:10.5pt;color:black'>and edit the config.js file to edit the
-questions, their options and colors. </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>For each set of
-choices, change the label to control what appears on the chart. </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Change the title to
-control what appears on the VoteWindow.html page. </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Change the value to
-the field you wish to represent that particular response in that particular
-pairing of choices. In the sample below, “Tap Water” is CHOICE02 in the first
-pairing, and CHOICE03 in the second pairing. </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Set the colors. The
-first value is the color of the pie slice, the second is the color of the
-outline for that slice. Most of the time, using the same color for both works
-best.</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-bottom:0in;margin-bottom:.0001pt;
-line-height:normal;text-autospace:none'><span style='font-size:12.0pt;
-font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>In general, you want the colors to suit your subject, and you want
-the charts’ colors to match the dots’ colors that appear on the map. ColorPic
-is a great tool for checking colors onscreen and converting RGB values (used in
-ArcMap) to HEX values (used in the web pages).</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=624 height=400 id="Picture 16"
-src="Getting_Started_for_PollMap_template_files/image014.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 13: config.js file.</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Go </span><span
-style='font-size:10.0pt;color:black'>to C:\inetpub\wwwroot\PollMap\ </span><span
-style='font-size:10.5pt;color:black'>directory in Windows Explorer.</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Open index.html to
-edit the page title, description, tags etc. to suit your situation.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=780 height=304 id="Picture 25"
-src="Getting_Started_for_PollMap_template_files/image015.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 14: index.html</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
-style='font-size:10.5pt;color:black'>Go back to </span><span style='font-size:
-10.0pt;color:black'>C:\inetpub\wwwroot\PollMap\js\esri\fanmap\templates\ </span><span
-style='font-size:10.5pt;color:black'>directory in Windows Explorer.</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
-style='font-size:10.5pt;color:black'>Edit GeocodeView.html to tweak the text
-that currently says “Enter postal code or city”, if needed. This is the FIND
-box on the user interface underneath the chart.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=779 height=151 id="Picture 28"
-src="Getting_Started_for_PollMap_template_files/image016.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 15: GeocodeView.html</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal;
-text-autospace:none'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>12.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
-style='font-size:10.5pt;color:black'>Edit AboutWindow.html to change Facebook,
-Twitter, etc. All new text needed here to suit your messaging.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><img
-border=0 width=780 height=404 id="Picture 37"
-src="Getting_Started_for_PollMap_template_files/image017.jpg"></span></p>
-
-<p class=MsoPlainText><i><span style='font-family:"Calibri","sans-serif";
-color:black'>Figure 16: AboutWindow.html</span></i></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 8 –Examine the Data</span></h1>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>While you are changing the questions and choices available, you
-can use the sample data provided to simulate votes that have come in. If you
-have completed Steps 1-5 above, those map services are already running. </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>After you have stopped editing everything and want to start
-recording real votes in a test, you can “zero out” the votes tables and start
-with a clean slate (described in a later step). For now, just have a look at
-the data in ArcCatalog to get familiar with the schema and content.</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Votes.gdb contains:</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Poll feature
-data set</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>zips_winkel
-point data</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>votes attribute
-table, which contains the actual votes as they come in</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Votes_samples.gdb contains a “blank” and a “test” version of the
-above.</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>&nbsp;</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>Poll feature
-data set</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>zips_winkel_blank
-point data. This is the same as the zips_winkel point data above, except that
-all fields named “CHOICExx” have “0” in them. When you are ready to start
-recording real votes, you can swap this layer in for the sample votes data
-provided.</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>zips_winkel_sample
-attribute table. This is the same as zips_winkel point data above, but many
-records have values &gt;0 in “CHOICExx” fields so that you can experiment with
-colors and symbology as needed.</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>votes_blank
-attribute table, which is empty and ready to swap in for launch.</span></p>
-
-<p class=MsoPlainText style='margin-left:.5in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"Calibri","sans-serif"'>votes_sample attribute
-table, which is populated and ready to swap in for testing.</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif"'>&nbsp;</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 9 – Edit Map Services to Match Your Questions and Responses</span></h1>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>The Question01 map and Question02 map use graduated circles to
-represent the locations. Color is set by the choice with the highest vote count
-at that location. Size is set by the vote count for that choice. Follow these
-steps to edit these MXDs, create fresh .MSD files, and refresh the services.</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;margin-bottom:.0001pt;
-line-height:normal;text-autospace:none'><span style='font-size:12.0pt;
-font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Using ArcCatalog, go
-to &lt;your_directory&gt;\ArcGISTemplates\PollMapTemplate\MapsandGeodatabase</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Open Question01.mxd
-and rename the data frame, group names, and each layer name as needed to match
-your question and choices. </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Modify colors of the
-symbols as needed. Use ColorPic or another tool to determine the web value for
-your symbol colors, so that you can update the config.js file with each
-choice’s value.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Look at the Definition
-Query in each layer to see how that controls which postal codes get symbolized
-in that layer. Modify as needed, e.g. if your question pairs up CHOICE05 and
-CHOICE06, you want each layer to reflect that in the definition query.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>When ready to serve
-your modified map, turn on the Map Service Publishing toolbar and check that
-your aliasing is set to “Best/Force.”</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>From the Map
-Publishing toolbar, preview your map. This triggers ArcMap to correctly apply
-PNG settings before you save to MSD file. Then save an .MSD file to the same
-directory as the .MXD. Go refresh the services to see your changes. You may
-need to refresh your cache, e.g. from </span><span class=MsoHyperlink><span
-style='font-size:10.5pt'>http://&lt;yourserver&gt;/arcgis/rest/admin</span></span><span
-style='font-size:10.5pt;color:black'>.  </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>.
-</span></p>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Edit Question02.mxd in the same manner. If you rename any
-services, you will also need to edit the config.js file listed earlier so that
-the application knows where to obtain its maps. </span></p>
-
-<span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'><br clear=all style='page-break-before:always'>
-</span>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
-color:black'>&nbsp;</span></b></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 10 – Reset the Votes Database</span></h1>
-
-<p class=MsoPlainText><span style='font-family:"Calibri","sans-serif";
-color:black'>Once you validate that the maps look OK using the sample data,
-it’s time to “zero out” all the tables so that you can start recording votes. </span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Stop all ArcGIS Server
-services that use this data – be sure you’ve stopped Question01, Question02,
-zips_winkel and the Vote geoprocessing service.</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>In ArcCatalog, rename
-the votes table and the zips_winkel data to votes_test and zips_winkel_test. If
-you cannot rename the service, it is likely because some other application has
-a connection open (e.g. ArcMap).</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>In ArcCatalog, copy
-votes_blank and zips_winkel_blank to votes and zips_winkel.</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Restart ArcGIS Server
-services.</span></p>
-
-<h1><span style='font-size:12.0pt;line-height:115%;font-family:"Calibri","sans-serif";
-color:black'>Step 11 – Additional Branding</span></h1>
-
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Go to </span><span
-style='font-size:10.0pt;color:black'>C:\inetpub\wwwroot\PollMap\js\esri\fanmap\img
-</span><span style='font-size:10.5pt;color:black'>in Windows Explorer.</span></p>
-
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal;text-autospace:none'><span style='font-size:10.5pt;
-color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.5pt;color:black'>Edit file 1sidebar.png
-with your content, and rename it to “sidebar.png” to have the app pick up and
-display it. Result appears on left side of app.</span></p>
-
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
-
-<span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman","serif"'><br
+<h2><a name="_Toc312316460">Configuring your PollMap</a></h2>
+
+<p class=MsoNormal>After you’ve confirmed that the site works (you can submit a
+vote and see a map afterwards with no error messages), then you can start the
+process of configuring the application files to suit your situation.  The
+general sequence is below and while it can all be accomplished in a few days,
+it takes most people 2-3 weeks before they’re comfortable sharing their Public
+Opinion Map with the world, particularly the first time.</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><b>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Determine
+your questions:</b> The important thing here is to write them down once, taking
+no more than 20 minutes to complete the poll.  You’ll learn more quickly by
+diving in and configuring the poll you just unzipped and tested.  Expect at
+least a week of refining and adjusting of words and phrases.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><b>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Set
+the geographic scope of your poll:</b>  Currently you can support a global poll
+by collecting the city name respondents provide, or a national or smaller scope
+poll based on postal codes.   The default poll (water map) targets U.S. and
+Canadian postal codes (currently there is no support for multiple countries
+when two or more countries share the same format for postal codes).  Cities and
+additional postal code data can be found at the <a
+href="http://www.arcgis.com/home/group.html?owner=MappingCenterTeam&amp;title=Public%20Opinion%20Maps">Public
+Opinion Maps group</a> on ArcGIS Online.  This should take no more than an hour
+or two.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><b>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Set
+up your map services:</b>   It’s likely that your questions will have a
+different number of answers than our example, so you will need to edit these
+map documents, changing the fields, definition queries, and symbols for the
+reporting layers.   This work will take anywhere from a few hours to two days
+depending on the number of questions and responses you have.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><b>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Reset
+the votes table and zero out the responses:</b>  Initially use the default
+votes table and results supplied in the example to see what your map will look
+like.  This allows you to set the symbology for your map effectively.  Once you
+are ready to test your map for the final time, you’ll want to verify using a
+zero vote count scenario.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><b>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Deploy
+your map:</b>  Once the map works with zero votes, it’s ready to deploy on to a
+public server.  This means you will copy your website, the maps, and data to
+that server.  Then you’ll create new services and edit the configuration files
+to use those services, edit your geoprocessing scripts to point to your new
+data location (if different), make sure all social media widgets correctly
+point to your new url, and set up analytics (such as Google Analytics). Your
+Public Opinion Map should be ready to use.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><b>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Promote
+your map:</b>  Just because your map is deployed and working doesn’t mean
+people will find it.  Planning for marketing your map will be ongoing
+throughout the above phases of work.  The general idea is to gradually tell people
+about your map.  Initially you will monitor all activity, usually having a few
+close colleagues using the map, and then you may spread the word to a slightly
+larger community.  For instance, we first test the map with just the
+development team (5 people), and then we share the map to a group of about 20
+people, and then to about 100 people.  We have had to reset the votes and were
+surprised by many things that are now fixed in the 2.01 version during these
+early releases.  It’s better to get the initial issues worked out on a small
+friendly audience.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><b>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Fix
+issues and refine:</b>  The Public Opinion Map is flexible and can be edited
+while it is running.  The first week of operation is usually characterized by a
+set of issues that come in fast, but then dwindle to just a few items by the
+end of that week.  So far this is normal—every poll is different and the issues
+will vary. </p>
+
+<h2><a name="_Toc312316461">Configure the user interface to start using your
+poll’s questions</a></h2>
+
+<p class=MsoNormal><b><i>Edit the VoteWindow.html file</i></b> to tweak the
+question and set context for responses.  Especially early on, experiment, doing
+one change at a time to learn where each item you’ve edited is used as part of
+the experience.  Decisions you make here flow into subsequent edits in other
+files, so it’s good to get this squared away early.</p>
+
+<p class=MsoNormal><b><i>Edit the config.js file</i></b> to change the possible
+responses (aka “CHOICE01”, “CHOICE02” etc) and their options and colors. </p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Under
+“<b>app”</b>,<b> </b>start with the <b>type</b> variable.  Pollmaps cannot mix
+types of questions, so what you set here will apply to all of your questions</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>See
+the examples for each autocomplete, radio and allocation types of questions. 
+You will see which variables are needed.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Experiment
+with subtitles, which can be used as section breaks between radio type
+questions. (needs to be brought over from your lunchpollmap)</p>
+
+<p class=MsoNormal><b>Edit index.html </b>to change the page title,
+description, tags etc. to suit your situation. </p>
+
+<p class=MsoNormal><b>Edit SummaryPane.html</b> to tweak the text. This is the
+pane that shows the pie chart on the large map window.</p>
+
+<p class=MsoNormal><b>Edit GeocodeView.html</b> to tweak the text.  This is the
+FIND box on the user interface underneath the chart.</p>
+
+<p class=MsoNormal><b>Edit AboutWindow.</b>html to enter new text needed here
+to suit your map.  Once your application is deployed on the production server,
+update Facebook, Twitter, etc.  </p>
+
+<h2><a name="_Toc312316462">Review and Learn about the Data</a></h2>
+
+<p class=MsoNormal>For now, you don’t need to do anything to the sample data. 
+Later, when you are ready to start with a clean slate, read this again. For
+now, just have a look at the data in ArcCatalog to get familiar with the schema
+and content.</p>
+
+<p class=MsoNormal>Votes.gdb contains five datasets:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Votes Table, which is how votes are recorded.  When a person
+clicks the submit button in the application a record is added to this table
+indicting the location they selected and which options they chose.  For radio
+or auto-complete type questions a 1 is set in the appropriate CHOICExx field to
+indicate what they chose. For allocation type questions, the amount the user
+allocated is recorded.  The cookie field is a way to determine who voted
+(summarizing the table based on this will tell you how many unique users (or at
+least, browsers) participated).  The DateTime field records when the vote was
+submitted.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Votes_blank Table, which is the schema for the votes table and
+will be used to create the clean slate when you deploy the application.  If you
+ever need to recreate this table, just make a copy of any current Votes table
+and then run the <a
+href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//0017000000n6000000">Delete
+Rows tool</a> on the copy.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>PostalCodes Points, which is the sample data that you saw when
+you set up the template. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>PostalCodes_Empty.  This is the dataset you’ll use to collect
+responses to your questions once you deploy. The easiest way to reset the vote
+is to have this table handy to copy and rename to PostalCodes—that way you are
+only managing data and not needing to reconfigure anything to get started.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Wingdings'>n<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>PostalCodes_TestData, which is copy of the sample data. 
+Sometimes it is useful to go back to this data, like if you need to reset any
+symbology or if you change the number of potential answers to your questions
+after you have been testing your work.</p>
+
+<p class=MsoNormal>Once you have tested and verified everything is working with
+the sample data and you are ready to deploy the application you will need to stop
+all services, then copy and rename the votes table and PostalCodes feature
+class.  Then restart ArcGIS Server services. </p>
+
+<h2><a name="_Toc312316463">Determine your geographic scope and how you want
+the maps to look</a></h2>
+
+<p class=MsoNormal>Now is the time to decide what the initial geographic extent
+of your maps will be and what projection to use.  We have used both Web
+Mercator as a project because we could use Esri’s Canvas Basemaps and we have
+also made custom base maps that depicted our area of interest the most
+geographically responsible way given that we were creating a multi-scale web
+map application.  To help you learn more about this decision we creating some
+blog entries that discuss the decisions we made:</p>
+
+<p class=MsoNormal><a
+href="http://blogs.esri.com/Support/blogs/mappingcenter/archive/2011/02/17/an-alternative-to-web-mercator-winkle-triple.aspx">Alternative
+to Web Mercator:  Winkel Tripel</a></p>
+
+<p class=MsoNormal><a
+href="http://blogs.esri.com/Support/blogs/mappingcenter/archive/2011/02/11/making-the-fanmap-super-bowl-edition.aspx">Making
+the FanMap: Super Bowl Edition</a></p>
+
+<p class=MsoNormal>Once you have determined the extent and coordinate system,
+you need to enter this information in the config.js file.  There are some
+standard entries already there that are commented out, to save you time.</p>
+
+<h2><a name="_Toc312316464">Edit Maps behind Your Services to Match Your Questions
+and Responses</a></h2>
+
+<p class=MsoNormal>Each question your poll asks requires a map to be served in
+order to display results.  Each map has one layer for each possible response to
+a question and an additional layer for showing ties.  Because these maps need
+to look good at multiple scales, we’ve provided three designs, one for large
+scales, another for small scales, and one for very small scales. The rationale
+is that at small scales the dots must be relatively small to have a legible, or
+readable, map.  As a user zooms in the dots can be larger, and once a user
+zooms into large scales the dots scale.  Try zooming in from a global extent to
+one cluster of dots—you will see the subtle change we introduce.  The way this
+works is by having three group layers in the map.  That means you will need to
+make edits to each of the layers within these group layers to make your map work.</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Open
+Question01.mxd and rename the data frame to reflect the question the map
+corresponds to.  Then rename the layers to reflect the possible responses.  Question01.mxd
+is a map for a radio type question where there are two possible responses which
+are derived from fields CHOICE01 and CHOICE02.  If you do not need to add more
+responses or changed the fields used to symbolize the data, follow the
+procedure in step 2, just change the colors of the symbol to match what is
+defined in the config.js file for the question..  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+add more responses, or if you need to change which fields are being used to
+symbolize the data follow these steps:</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Open
+the layers properties and remove the definition query.  Click Apply to set the
+new definition query.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Go
+to the symbology tab and first edit or just save the template symbol.  This
+will give you a good symbol to work with. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Change
+the field – notice that this will reset how the symbology is applied.  The test
+datasets were specially prepared so that each field contains exactly the same
+data, making it possible for you to set exactly the same symbol size ranges for
+each layer, which will allow them to be visually comparable.  Change the color
+of the symbol to match what is defined in the config.js file for the question.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Click
+Apply in the Layer Properties dialog to set the new symbology.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>e.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Go
+back to the definition query tab and set the correct definition query for the
+layer.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'>f.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Repeat
+for each layer and then skip to step 4. </p>
+
+<h2><a name="_Toc312316465">Serving Your Newly Edited Maps</a></h2>
+
+<p class=MsoNormal>When ready to serve your modified map, here is the procedure
+to follow to ensure the maps look right and are easily maintainable: </p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Turn
+on the Map Publishing toolbar and check that your Options (right most button on
+the toolbar) for Anti-aliasing is set to “Best” and for Text Anti-Aliasing is
+“Force”.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>From
+the Map Publishing toolbar, Preview your map and set the properties Image
+Format to PNG32.  This required and ensures the map service will produce the
+best looking display of your data.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Then
+export to MSD.  Be sure you pay attention to what directory you are writing the
+MSD to, so that you don’t save it in a place which the service isn’t drawing
+from on restarts.   This is a backup copy.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+publish your map using the Publish to ArcGIS Server button.  If this is a new
+service, edit the config.js file to add the Service URL (from the REST endpoint
+of your server) to the questions and maps sections.  If you are updating a
+service, still use this option because it saves your MSD in your
+arcgisserver/input folder, and the Publish to ArcGIS Server button
+automatically updates that file.  </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>You
+may need to clear the REST cache for your server to see your changes.  The rest
+cache is at a URL like this:  <a href="http://skyray.esri.com/arcgis/rest/admin">http://skyray.esri.com/arcgis/rest/admin</a>. 
+For some changes, it is also necessary to clear your browser’s cache too.</p>
+
+<p class=MsoNormal>Remember, if you rename or create a new service, that’s fine
+– just edit the config.js file listed above.  In fact this is a good time to
+determine the names for the map services that will support your Public Opinion
+Map.</p>
+
+<p class=MsoNormal>We’ve found we spent a fair portion of the time to deploy a
+Public Opinion Map is in editing the maps.  One tip for saving time on editing
+maps is to prototype your questions using the sample data with the goal of
+getting the look of the VoteWindow.html finalized. Only once you are certain
+that you have final list of potential responses to each question should you
+begin the process of setting up your maps.  The operation that takes the
+longest is adding a response to a given question.   The best way to know you
+have the questions done is to have people you respect try to vote and give
+their honest reactions to the questions. They will tell you if something is
+missing or phrased in an awkward way.</p>
+
+<p class=MsoNormal>The votes table, the PostalCodes points, and the citytown
+points are set up to handle up to 30 potential responses.  If you need more… well,
+consider dropping a question or refining your poll’s objective; 30 potential
+responses is a lot to ask Web people to do spend time assimilating.  30
+responses will generate a large amount of work (870 possible pair-wise
+summaries, and that does not include grouping). These polls should bequick and
+fun to use, even if the topic is serious.  If you find you need more responses,
+remember to add fields to both the votes table and your points feature class.  If
+you do not have expertise in survey design, consider consulting someone who
+does—they will be of great help. </p>
+
+<h2><a name="_Toc312316466">Configure Additional Services</a></h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Set
+up feature service next.  Use postalcodes.msd, serve as a normal map service.
+Do not turn on “Feature Access” as it is unnecessary while you are in a
+development environment (see the System Architecture section below for further
+information).</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Set
+up a geometry service next.  In ArcCatalog, right click on your server name,
+and click Add New Service.  Select “Geometry” service and hit Next until
+completion, accepting all defaults for now.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Set
+up GP services next.  Edit the two python scripts to make sure the path to the
+database matches your development or production database.  After editing, or if
+you have no changes at this point, go to ArcCatalog and navigate to the
+scripts’ folder.  Right-click on the votes.tbx toolbox and choose “Publish to
+ArcGIS Server.”  Accept the defaults for now.  After it starts, stop the
+service and right-click on it, choose Properties.  Change the Execution type to
+synchronous.  Set the timeouts for these services to be 6-8 seconds, any longer
+will cause the map to look like it is hung.  If you have a lot of traffic, it’s
+better to be at 8 seconds just in case it takes longer to calculate the summary
+for the chart that is drawn when a user pans or zooms. Usually that takes 1-2
+seconds. </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>If
+you are using SDE, you will need to use the Create ArcSDE Connection File tool
+(in Data Management Tools <span style='font-family:Wingdings'>à</span>
+Workspace) in order to make a file that will be the basis for your python
+scripts to have a complete path string that points to your data.  </p>
+
+<h2><a name="_Toc312316467">Configuring the Social Media Widgets</a></h2>
+
+<p class=MsoNormal>The default PollMap contains connections to two Social Media
+outlets:  FaceBook and Twitter. These are configured in three files:  </p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Index.html
+where you will need to uncomment two sections of code.  In the first section
+you will customize the parameters to match your map’s topic. In the 2<sup>nd</sup>
+section you will provide the parameters needed to initialize the FaceBook Like
+button, and the Tweet button.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>AboutWindow.html
+where you will uncomment and customize the section of code at the top to match
+the first section of #1 above.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Config.js
+where you will customize the value of the megaMapSocialWidgetsHTMLvariable. 
+This is a little more difficult for having all the code for the script
+contained in one string, so save this for last, after you have the code working.</p>
+
+<p class=MsoNormal>For Twitter, you do not need your own account, though it is
+helpful to test.  Depending on how you want to leverage Twitter, you can get
+help here:  <a href="https://dev.twitter.com/docs/twitter-for-websites">https://dev.twitter.com/docs/twitter-for-websites</a>.</p>
+
+<p class=MsoNormal>For Facebook, you will need an account and you will need to
+create an application, which will provide you with the information needed to
+update the code in index.html. Go to:  <a href="http://developers.facebook.com/">http://developers.facebook.com/</a>
+to get started, you will want to create an app for your PollMap.  The idea is
+that users will be “Liking” your app.</p>
+
+<h2><a name="_Toc312316468">Determine How People Will Learn About Your Map</a></h2>
+
+<p class=MsoNormal>If you work for an organization that has a marketing or
+public relations department, now is a good time to let them know what you’re
+doing and that their help would be very much appreciated.  Hopefully they were
+the ones who asked you for this map in the first place.  </p>
+
+<p class=MsoNormal>Another scenario is that you’re doing research as a student
+or faculty at a university.  Social media, including email, is going to be your
+primary means of telling people about your map.  Start drafting content early. 
+You’ll want at least three different pitches for at least three different
+audiences.  The pitches should fit within the following lengths: 140
+characters, 300 characters, and 300 words. The three audiences are:  your
+friends and family, people you know such as colleagues, and people you don’t
+know.  The latter category will be identified more as groups that may be
+interested in your map’s content.   Some of your messages will be generated
+from your map if you are using the social media widgets, so tailor those
+messages as if the users of your map are sending them to their friends, family,
+and colleagues (think to eliminate work on their part in helping you get the
+word out). </p>
+
+<p class=MsoNormal>If you’re in this latter category of people without a
+marketing department to help you, here are some things to consider:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Getting
+500 responses in your first week is a really good start, and it will take you
+about 8-10 hours of concerted effort to make that happen during the course of
+that week.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Most
+organizations will not help you, but try anyway.  For the most part, they will
+be wary of any risks in being associated with your map.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Do
+press releases for the local papers, including campus newspapers—each will use
+a tailored version of your 300 word pitch.  Follow up with the editors until
+you have confirmation of go or no-go.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Get
+friends to advocate your map on social media promotion sites like Reddit,Digg
+or StumbleUpon.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+leverage sites like FaceBook or LinkedIn, look for groups or pages that have
+tens of thousands of people who like them.  Expect that a post here will be
+acted upon by 0.001% to 0.1% of people.  Yes, that means you’re trolling for
+1s, 5s, and 10s of submissions.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>To
+leverage Twitter, it’s good to have well connected credible friends.  If you’re
+new to Twitter, that may be hard to achieve quickly.  Either way, here are a
+few tips:</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Search
+for hash-tags (starts with a #) that relate to your topic.  Make sure you
+leverage those hash tags in your messaging from the app and in tweets you
+generate.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Message
+well connected people who are obviously potentially interested in your map. 
+Ask them to have a look and if they like your map to please tweet it.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Get
+TweetDeck to monitor activity.  The Twitter web site can help too.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>It’s
+important to have or find several credible well connected friends on Twitter. 
+These people can generate dozens and even hundreds of hits for your map.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The
+time of day that you use social media matters.  9:00 AM to 3:00 PM on weekdays
+is most effective, with early to mid morning being the best.  Weekends and
+Evenings will often produce less than 10% of the results that a weekday message
+produces.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Consider
+setting up an email account to deal with the feedback and management of
+promoting your map. However, do not set up a new social media account (unless
+your map is part of a larger marketing or product promotion campaign) because
+nobody will know about it, and you’ll find yourself promoting that account and
+your map.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Make
+sure you have an audience of people to initially populate your map with
+responses.  You’ll want about 50 people to start things off.  An empty Pollmap
+is rather pathetic.  Consider putting in some responses yourself to seed things
+if you don’t have enough people to get things started.  You’re in control, and
+you can, once the poll is done summarize the first 100 responses in the votes
+table to determine how many to subtract from the final totals (so you don’t
+analyze your seed responses).  </p>
+
+<h2>&nbsp;</h2>
+
+<h2><a name="_Toc312316469">Additional Branding</a></h2>
+
+<p class=MsoNormal>Edit file 1sidebar.png (or use one of the sidebar.ai files
+in the media directory) with your content, and rename it to “sidebar.png” to
+have the app pick up and display it.  Result appears on left side of app.</p>
+
+<p class=MsoNormal>In the text at the bottom of the map you have the
+opportunity to solicit feedback and brand yourself or your sponsors by
+including text that links to appropriate web sites.  The About window
+(AboutWindow.html) is another place you have an opportunity to tell your story
+and additional brand or distinguish your Public Opinion Poll.  </p>
+
+<h2><a name="_Toc312316470">System Architecture</a></h2>
+
+<p class=MsoNormal>If you’ve implemented the system as we’ve described above,
+you have a single server configuration that is capable of handling about 250
+users per hour without affecting performance provided you using a mid-sized
+server.  For the sake of this discussion, a mid-sized server is one with 4
+CPUs, 8Gb of RAM and is running a 64-bit OS.  The only remaining issue to
+consider is peak load, particularly if users are concurrently accessing your
+map.  Concurrent use is when two or more people simultaneously ask your map to
+do something. Our testing has shown this one-server configuration will handle
+the occasional burst of two concurrent users.</p>
+
+<p class=MsoNormal>We monitor activity on our servers by looking in the ArcGIS
+Server properties to see the response times for our services.  Our expectation
+is that responses for map service will be under 0.2 seconds, and we like to see
+the GP services at under 1.8 seconds.  Under peak load it is okay for these to
+be double.  But if they are consistently higher, then add more processes to
+these services to handle that load.  It is not uncommon to have 6-12 processes
+per map service and 10-20 processes for the GP service. Once you have this many
+services, it is good to monitor overall system resource usage to ensure you do
+are not coming close to the limits of your system’s CPU or memory resources. 
+If you are, you will need to add other servers.  </p>
+
+<p class=MsoNormal>We have also implemented Public Opinion Maps on a more secure
+three-server configuration:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Geoprocessing
+services on one server.  The GP Services tend to be CPU-intensive, meaning that
+of memory, Disk I/O, or CPU, the latter resources is most heavily used.  </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Map
+Services on one server:  Map Services tend to be memory and File I/O intensive
+rather than CPU intensive. </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Database
+on one server.  The database is the only bottleneck in this application.   By
+isolating it on it’s own server, it’s use is maximized.  It is also more secure
+because there is no need to expose the database to direct use.  In our
+architecture, the only access to the database is through the GP server and
+through the map services, which can be on other servers.  </p>
+
+<p class=MsoNormal>We are usually asked how much use can this application scale
+to handle?  For the one server configuration, we have found that two concurrent
+users, or about 4-500 users per hour is where noticeable performance issues
+cannot be avoided.  Up to that point, more processes can be added to handle
+usage.   The multi-server configuration was designed much higher loads; and
+based on our experience we believe it could handle as many as 250,000-500,000
+users per hour, with the database server ultimately being the bottleneck. The
+only recourse to scale further would be to employ a database replication
+strategy.    </p>
+
+<p class=MsoNormal>As more people submit votes, your database will grow.  We
+have learned that has two significant implications.  First is performance for
+the summary operations that occur when users change map extents.  Second, as
+more data is collected and processing the summary operations takes more
+resources, it will also take longer to process votes when they are submitted.   The
+database is the main bottleneck.  We shipped this template based on a file
+geodatabase, which is considered fast and works well in a scenario that does
+not involve concurrent use.   File Geodatabases are single user databases, and
+we rely on ArcGIS Server’s load balancing of the geoprocessing services to
+ensure system integrity.  However, there is a hard limit to what that system
+can scale to.  To get past that limit ArcSDE is required, and the reasoning is
+that a mulit-user DBMS can become the backend and your database.   </p>
+
+<h2><a name="_Toc312316471">Considerations for Deploying your PollMap on a
+Production Server</a></h2>
+
+<p class=MsoNormal>Deploy, and then test, test, test.  Never publicize a
+website that is intended for public consumption unless you have thoroughly
+tested it in the production environment. For example in most cases we used a
+3-tier system.  Our developers create on their development computers, and we
+ask them not to share those to us.  We do our internal testing on what we call
+a staging server, which is internal, i.e., not available to the public.  The
+reason for this is to ensure we learn exactly what files are required for
+deployment, having the goal of finding the minimum set.  </p>
+
+<p class=MsoNormal>Once that staging site works as expected, then we copy the
+data and maps to the production environment and set up the services.  Back in
+our staging environment we edit our config.js file to use those new production
+services and we test.  Then we deploy our website on the production server and
+test that.  All of this is still happening with the test data.  Once we verify
+the site is working correctly, we stop the services (so there are no locks on
+the data), we delete the test data and copy the zero vote count data, naming it
+to match our service requirements.  Now the site is technically ready for a
+trial run.</p>
+
+<p class=MsoNormal>Try voting and see if it works.  If so, remove the test
+votes and copy the zero vote count data again.  Now it’s time to have a few close
+colleagues or friends get your poll started. See the section about determining
+how people will learn about your map (above).</p>
+
+<h1><a name="_Toc312316472">How Voting Works</a></h1>
+
+<p class=MsoNormal>Here is how this application works:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A
+user loads the page and chooses their responses to the questions, enters a
+postal code, and clicks the Submit button.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The
+application sends that vote to the server which adds a record to the votes
+table.  That record includes a date/time and a unique identifier for the voter
+along with setting the value of the CHOICExx field to one for each response the
+user selected.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Another
+process is also triggeredthat selects the current geography in the points table
+and increments the CHOICExx fields for each response the user selected.  In
+both cases load is handled by ArcGIS server’s load balancing capabilities.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Next,
+the user is shown the collection of maps that correspond to each question. 
+They can click on any map to see it in the ‘MegaMap’ pane.  </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>When
+the MegaMap pane is loaded, panned, or zoomed, the resulting extent is sent to
+the server and the current votes within that extent are summarized and
+presented in the form of a pie chart.  That means every time a user changes the
+extent an uptodate summary is produced.</p>
+
+<h1><a name="_Toc312316473">Analyzing the Results</a></h1>
+
+<p class=MsoNormal>Analyzing your results is done using the votes table and the
+Summary Statistics tool (Analysis toobox<span style='font-family:Wingdings'>à</span>Statistics). 
+The idea is to Selection by Attributes to select rows in the votes table using
+queries like:  CHOICE01 = 1.   You can also use more complex queries like:
+CHOICE01 = 1 AND CHOICE05 = 1.  It’s also possible to group responses within
+questions by using queries like:  (CHOICE01 = 1 OR CHOICE02 = 1) AND CHOICE05 =
+1.  For Allocation question types, you will use a slightly different query,
+which is CHOICExx IS NOT NULL. </p>
+
+<p class=MsoNormal>For radio question type polls, use the Summary Statistics
+tool by adding each of the CHOICExx fields as Statistics fields with SUM being
+the statistic type. You will not need Case fields or other types of statistics
+because all the values in the votes table are either null or 1.  </p>
+
+<p class=MsoNormal>For allocation question type polls, use the Summary
+Statistics tool by adding each of the CHOICExx fields by SUM, MEAN, STD, and
+COUNT.  </p>
+
+<h1><a name="_Toc312316474">Additional Resources</a></h1>
+
+<p class=MsoNormal>Conducting a poll of any sort requires thought and
+expertise. <a href="http://www.aapor.org">The American Association for Public
+Opinion Research</a> offers many useful resources for both experienced
+pollsters and those who may be conducting their first poll. </p>
+
+<p class=MsoNormal>If you are considering adding functionality to your map, the
+<a href="http://help.arcgis.com/en/webapi/javascript/arcgis/">ArcGIS API for
+JavaScript</a> will be needed.</p>
+
+<p class=MsoNormal>We used the <a href="http://dojotoolkit.org/documentation/">dojo
+toolkit</a> for our graphs, and this is the place to start if you wish to
+customize the graph for your map.<br clear=all style='page-break-before:always'>
+</p>
+
+<h1><a name="_Toc312316475">Known Issues</a></h1>
+
+<p class=MsoNormal>Internet Explore 7 is not currently supported.  The user is
+warned of this on the way in. </p>
+
+<p class=MsoNormal>We have not secured services properly in this version of the
+template.  It is possible for someone who is enterprising to hack and disrupt
+with your data, votes table, or zips_winkel table.  See the system architecture
+section above for advice.</p>
+
+<p class=MsoNormal>On vote, you are limited to the postal codes in this
+particular database, which comes from GeoNames  It’s actually pretty easy to
+add postal code points if you need to.  Just copy the postcodes feature class,
+then run Delete features on the copy, Add empty dataset to ArcMap, Start
+Editing, and add the code(s) you need.  Save your edits, and then use the
+Append tool to add your new codes.  </p>
+
+<p class=MsoNormal>Thanks for trying out this template.  Send comments about
+this document to <a href="mailto:jherries@esri.com">jherries@esri.com</a> and
+I’ll try to incorporate them quickly into the next version.  We can also
+correspond about the template itself.</p>
+
+<span style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><br
 clear=all style='page-break-before:always'>
 </span>
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
-"Times New Roman","serif"'>&nbsp;</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0in 0in 4.0pt 0in'>
+<h1><a name="_Toc312316476">Appendix A:  Definition Query Examples</a></h1>
 
-<p class=MsoTitleCxSpFirst><span style='font-size:14.0pt;color:black'>&nbsp;</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoTitleCxSpMiddle><span style='font-size:14.0pt;color:black'>&nbsp;</span></p>
+<p class=MsoNormal>Each question type may require a different strategy for your
+layer’s definition queries.  Here are examples for each question type:</p>
 
-<p class=MsoTitleCxSpMiddle>
+<h2><a name="_Toc312316477">Radio (2 Choices)</a></h2>
 
-<table cellpadding=0 cellspacing=0 align=left>
- <tr>
-  <td width=647 height=42></td>
- </tr>
- <tr>
-  <td></td>
-  <td><img width=156 height=69
-  src="Getting_Started_for_PollMap_template_files/image018.jpg"
-  alt="Description: esriLogo"></td>
- </tr>
-</table>
+<p class=MsoNormal><b>Regular layers</b>: <span style='font-family:"Courier New"'>CHOICE15
+&gt; CHOICE14</span></p>
 
-<span style='font-size:14.0pt;color:black'>&nbsp;</span></p>
+<p class=MsoNormal><b>Tied layers:</b> <span style='font-family:"Courier New"'>CHOICE14
+= CHOICE15 AND CHOICE14 &gt; 0</span></p>
 
-<br clear=ALL>
+<h2><a name="_Toc312316478">Radio (3 or more Choices)</a></h2>
 
-<p class=MsoTitleCxSpMiddle><span style='font-size:14.0pt;color:black'>Template:</span><span
-style='font-size:14.0pt;color:windowtext'>     PollMap Application Template for
-ArcGIS 10</span></p>
+<p class=MsoNormal><b>Regular layers: </b></p>
 
-<p class=MsoTitleCxSpMiddle><span style='font-size:14.0pt;color:black'>Version:        1.0</span></p>
+<p class=MsoNormal>The idea here is to detect when choice 12 has the highest
+total among all these fields:</p>
 
-<p class=MsoTitleCxSpLast><span style='font-size:14.0pt;color:black'>Date:              April
-28, 2011</span></p>
+<p class=MsoNormal><span style='font-family:"Courier New"'>CHOICE12 &gt;
+CHOICE08 AND CHOICE12 &gt; CHOICE09 AND CHOICE12 &gt; CHOICE10 AND CHOICE12
+&gt; CHOICE11 AND CHOICE12 &gt; CHOICE13</span></p>
 
-</div>
+<p class=MsoNormal><b>Tied layers:</b></p>
 
-<h1><a name="_Release_Notes"></a><span style='font-size:12.0pt;line-height:
-115%;font-family:"Calibri","sans-serif";color:black'>Release Notes</span></h1>
+<p class=MsoNormal>The idea here is to detect all possible ties between the
+following fields:  CHOICE08, CHOICE09, CHOICE10, CHOICE11, CHOICE12, and
+CHOICE13:</p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><span style='font-size:10.5pt;color:black'>The April
-28, 2011 release is the first release of the PollMap Template for ArcGIS 10.</span></p>
+<p class=MsoNormal><span style='font-family:"Courier New"'>(CHOICE08 &gt; 0 AND
+(CHOICE08 = CHOICE09 OR CHOICE08 = CHOICE10 OR CHOICE08 = CHOICE11 OR CHOICE08
+= CHOICE12 OR CHOICE08 = CHOICE13)) OR (CHOICE09 &gt; 0 AND (CHOICE09 =
+CHOICE10 OR CHOICE09 = CHOICE11 OR CHOICE09 = CHOICE12 OR CHOICE09 = CHOICE13))
+OR (CHOICE10 &gt; 0 AND (CHOICE10 = CHOICE11 OR CHOICE10 = CHOICE12 OR CHOICE10
+= CHOICE13)) OR (CHOICE11 &gt; 0 AND (CHOICE11 = CHOICE12 OR CHOICE11 =
+CHOICE13)) OR (CHOICE12 &gt; 0 AND CHOICE12 = CHOICE13)</span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><strong><span style='font-size:10.5pt;
-font-family:"Calibri","sans-serif"'>&nbsp;</span></strong></p>
+<p class=MsoNormal>Or, formatted for readability (do not copy and paste this
+section):</p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><strong><span style='font-size:10.5pt;
-font-family:"Calibri","sans-serif"'>New Functionality</span></strong></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:7.0pt;line-height:115%;font-family:"Courier New"'>(CHOICE08
+&gt; 0 AND (CHOICE08 = CHOICE09 OR CHOICE08 = CHOICE10 OR CHOICE08 = CHOICE11
+OR CHOICE08 = CHOICE12 OR CHOICE08 = CHOICE13)) </span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:7.0pt;line-height:115%;font-family:"Courier New"'>OR (CHOICE09
+&gt; 0 AND (CHOICE09 = CHOICE10 OR CHOICE09 = CHOICE11 OR CHOICE09 = CHOICE12
+OR CHOICE09 = CHOICE13)) </span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><span style='font-size:10.5pt'>N/A</span></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:7.0pt;line-height:115%;font-family:"Courier New"'>OR (CHOICE10
+&gt; 0 AND (CHOICE10 = CHOICE11 OR CHOICE10 = CHOICE12 OR CHOICE10 = CHOICE13))
+</span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><strong><span style='font-size:10.5pt;
-font-family:"Calibri","sans-serif"'>&nbsp;</span></strong></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:7.0pt;line-height:115%;font-family:"Courier New"'>OR (CHOICE11
+&gt; 0 AND (CHOICE11 = CHOICE12 OR CHOICE11 = CHOICE13)) </span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><strong><span style='font-size:10.5pt;
-font-family:"Calibri","sans-serif"'>Resolved Problems</span></strong></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:7.0pt;line-height:115%;font-family:"Courier New"'>OR (CHOICE12
+&gt; 0 AND CHOICE12 = CHOICE13)</span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
+<h2><a name="_Toc312316479">Allocation</a></h2>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><strong><span style='font-size:10.5pt;
-font-family:"Calibri","sans-serif";font-weight:normal'>N/A</span></strong></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:"Courier New"'>&quot;CHOICE04&quot;
+&gt; &quot;CHOICE01&quot; AND &quot;CHOICE04&quot; &gt; &quot;CHOICE02&quot; AND
+&quot;CHOICE04&quot; &gt; &quot;CHOICE03&quot; AND &quot;CHOICE04&quot; &gt;
+&quot;CHOICE05&quot; AND &quot;CHOICE04&quot; &gt; &quot;CHOICE06&quot;</span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><strong><span style='font-size:10.5pt;
-font-family:"Calibri","sans-serif"'>&nbsp;</span></strong></p>
+<span style='font-size:10.0pt;line-height:115%;font-family:"Courier New"'><br
+clear=all style='page-break-before:always'>
+</span>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;page-break-after:avoid'><strong><span style='font-size:10.5pt;
-font-family:"Calibri","sans-serif"'>Known Issues</span></strong></p>
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:115%;font-family:
+"Courier New"'>&nbsp;</span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'><span style='font-size:10.5pt;color:black'>&nbsp;</span></p>
+<h1><a name="_Toc312316480">Appendix B:  Config.js question type examples</a></h1>
 
-<p class=MsoNormal><span style='font-size:10.5pt;line-height:115%;color:black'>Internet
-Explorer 7 is not currently supported. The application advises the viewer with
-Internet Explorer 7 that the application is not supported in that browser.</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal><span style='font-size:10.5pt;line-height:115%;color:black'>On
-vote, you are limited to the postal codes in this particular database, which
-comes directly from the Esri Data &amp; Maps DVD for ArcGIS 10. There is always
-the chance that someone will use a postal code they are 100% sure is real, and
-it very well may be real, but just isn’t in this particular database. Most of
-the time, they will try a similar postal code and continue. The “Find” tool on
-the chart works with a much larger gazetteer online, so users can type in a
-pretty wide variety of place names, universities, towns, postal codes, etc. </span></p>
+<p class=MsoNormal>Each question type requires a different use and subset of
+the possible variables.  Here are examples of what is required for each of the
+question types supported at version 2.01</p>
 
-<p class=MsoNormal><span style='font-size:10.5pt;line-height:115%;color:black'>Thanks
-for using this template. Send comments about this template to </span><a
-href="mailto:jherries@esri.com"><span style='font-size:10.5pt;line-height:115%'>jherries@esri.com</span></a><span
-style='font-size:10.5pt;line-height:115%'> </span></p>
+<h2><a name="_Toc312316481">Radio (2 Choices)</a></h2>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:"Courier New"'>&nbsp;</span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>questions : [{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>      type :
+&quot;radio&quot;, //must match config.app.questionMode <a name="_GoBack"></a> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>      label :
+&quot;Gender: &quot;, //for the voteWindow.html </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>      title :
+&quot;Gender&quot;,  //for the multi-map view</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>      subtitle
+: &quot;About your most recent…&quot; //Optional</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>      active :
+true,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>      values :
+[{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>            label
+: &quot;Male&quot;,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>            value
+: &quot;CHOICE01&quot;, // the field name in the votes table</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>            title
+: &quot;Male&quot; //for the pie chart</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>      },{</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>            label
+: &quot;Female&quot;,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>            value
+: &quot;CHOICE02&quot;,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>            title
+: &quot;Female&quot; </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>      }]</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Courier New"'>},{</span></p>
+
+<h2><a name="_Toc312316482">Autocomplete (<i>n</i> Choices)</a></h2>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'>This option
+has not been tested yet, as soon as it has, we will add documentation.<span
+style='font-size:10.0pt;line-height:115%;font-family:"Courier New"'> </span></p>
 
 </div>
 
